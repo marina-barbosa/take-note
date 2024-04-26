@@ -1,4 +1,3 @@
-using System.Threading.Tasks.Dataflow;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using take_note.Domain.Models;
@@ -13,26 +12,28 @@ public class NoteController : ControllerBase
   private readonly INoteService _noteService;
   private readonly MySqlDbContext _context;
 
-  public NoteController(INoteService noteService, MySqlDbContext context)
+  private readonly ITrackService _trackService;
+
+
+  public NoteController(INoteService noteService, MySqlDbContext context, ITrackService trackService)
   {
     _noteService = noteService;
     _context = context;
-  }
-
-  [HttpGet("Hello")]
-  public IActionResult HelloNotes()
-  {
-    var msg = "Hello Notes, tudo Ok <====";
-
-
-
-    return Ok(msg);
+    _trackService = trackService;
   }
 
   [HttpGet]
   public async Task<IActionResult> GetNotes()
   {
     var notes = await _noteService.GetAllNotesAsync();
+
+    await _trackService.TrackDatabaseQueries($"Método: GET - GetAllNotesAsync()");
+
+    foreach (var note in notes)
+    {
+      await _trackService.TrackDatabaseQueries($"Content: Título: {note.Title}, Conteúdo: {note.Content}");
+    }
+
     return Ok(notes);
   }
 

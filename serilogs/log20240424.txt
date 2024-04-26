@@ -1,0 +1,41 @@
+log2024202420242024
+2024-04-24 22:17:20.022 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/note - application/json 181
+2024-04-24 22:17:20.029 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.CreateNote (take-note)'
+2024-04-24 22:17:20.906 -03:00 [INF] Executed DbCommand (32ms) [Parameters=[@p0='ÉEEEEEEEEeeeeeEEeeeeeeeeeEeeeee string' (Nullable = false) (Size = 4000), @p1='2024-04-25T01:17:20.2775777Z' (DbType = DateTime), @p2='Uééééé' (Nullable = false) (Size = 4000), @p3='2024-04-25T01:17:00.3070000Z' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Notes` (`Content`, `CreatedAt`, `Title`, `UpdatedAt`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Notes`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2024-04-24 22:17:20.995 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/note - 201 null application/json; charset=utf-8 972.422ms
+2024-04-24 22:17:22.538 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/note - application/json 181
+2024-04-24 22:17:22.539 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.CreateNote (take-note)'
+2024-04-24 22:17:22.615 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='ÉEEEEEEEEeeeeeEEeeeeeeeeeEeeeee string' (Nullable = false) (Size = 4000), @p1='2024-04-25T01:17:22.5506883Z' (DbType = DateTime), @p2='Uééééé' (Nullable = false) (Size = 4000), @p3='2024-04-25T01:17:00.3070000Z' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Notes` (`Content`, `CreatedAt`, `Title`, `UpdatedAt`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Notes`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2024-04-24 22:17:22.636 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/note - 201 null application/json; charset=utf-8 98.2611ms
+2024-04-24 22:17:28.249 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note - null null
+2024-04-24 22:17:28.249 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-04-24 22:17:28.417 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-04-24 22:17:28.426 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note - 200 null application/json; charset=utf-8 177.0955ms
+2024-04-24 22:22:25.792 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5036/v1/note/3 - application/json 166
+2024-04-24 22:22:25.793 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.UpdateNote (take-note)'
+2024-04-24 22:22:25.824 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5036/v1/note/3 - 400 null application/problem+json; charset=utf-8 32.1805ms
+2024-04-24 22:22:59.953 -03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5036/v1/note/3 - null null
+2024-04-24 22:22:59.953 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.DeleteNote (take-note)'
+2024-04-24 22:23:00.074 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='3'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+WHERE `n`.`Id` = @__p_0
+LIMIT 1
+2024-04-24 22:23:00.100 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[@p0='3'], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+DELETE FROM `Notes`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+2024-04-24 22:23:00.107 -03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5036/v1/note/3 - 204 null null 154.4224ms
