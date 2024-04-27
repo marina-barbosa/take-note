@@ -43,7 +43,7 @@ builder.Services.AddCors(options =>
 {
   options.AddPolicy("AllowSpecificOrigins", builder =>
   {
-    builder.WithOrigins("http://localhost:4200") // Replace with allowed origin(s)
+    builder.WithOrigins("http://localhost:4200", "https://takenotemxm.azurewebsites.net")
               .AllowAnyMethod()
               .AllowAnyHeader();
   });
