@@ -43,7 +43,7 @@ builder.Services.AddCors(options =>
 {
   options.AddPolicy("AllowSpecificOrigins", builder =>
   {
-    builder.WithOrigins("http://localhost:4200", "https://takenotemxm.netlify.app/")
+    builder.WithOrigins("https://takenotemxm.netlify.app")
               .AllowAnyMethod()
               .AllowAnyHeader();
   });
