@@ -15,3 +15,8 @@ Registro.txt (registro 'manual' de logs)
 26/04/2024 23:13:41 - Dados: Id: 1 Título: trabalho, Conteúdo: Reunião às 10h com equipe de projeto e responder emails pendentes
 26/04/2024 23:13:41 - Dados: Id: 2 Título: lista de COMPRAS, Conteúdo: ovo, leite, sabonete
 26/04/2024 23:13:41 - Dados: Id: 3 Título: ideias para presente, Conteúdo: Chocolates artesanais, Uma planta suculenta, Caneca personalizada
+27/04/2024 18:47:03 - Método: GET - GetAllNotesAsync()
+27/04/2024 18:47:03 - Dados: Id: 1 Título: trabalho, Conteúdo: Reunião às 10h com equipe de projeto e responder emails pendentes
+27/04/2024 18:47:03 - Dados: Id: 2 Título: lista de COMPRAS, Conteúdo: ovo, leite, sabonete
+27/04/2024 18:47:03 - Dados: Id: 3 Título: ideias para presente, Conteúdo: Chocolates artesanais, Uma planta suculenta, Caneca personalizada
+27/04/2024 18:47:03 - Dados: Id: 4 Título: estudos, Conteúdo: tentar fazer deploy na azure com vscode 
