@@ -27,11 +27,11 @@ public class NoteController : ControllerBase
   {
     var notes = await _noteService.GetAllNotesAsync();
 
-    await _trackService.TrackDatabaseQueries($"Método: GET - GetAllNotesAsync()");
-
+    DateTime currentTime = DateTime.Now;
+    await _trackService.TrackDatabaseQueries($"{currentTime} - Método: GET - GetAllNotesAsync()");
     foreach (var note in notes)
     {
-      await _trackService.TrackDatabaseQueries($"Content: Título: {note.Title}, Conteúdo: {note.Content}");
+      await _trackService.TrackDatabaseQueries($"{currentTime} - Dados: Id: {note.Id} Título: {note.Title}, Conteúdo: {note.Content}");
     }
 
     return Ok(notes);
@@ -45,6 +45,10 @@ public class NoteController : ControllerBase
     {
       return NotFound();
     }
+    DateTime currentTime = DateTime.Now;
+    await _trackService.TrackDatabaseQueries($"{currentTime} - Método: GET - GetNote()");
+    await _trackService.TrackDatabaseQueries($"{currentTime} - Dados: Id: {note.Id} Título: {note.Title}, Conteúdo: {note.Content}");
+
     return Ok(note);
   }
 
@@ -57,6 +61,11 @@ public class NoteController : ControllerBase
     }
 
     var createdNote = await _noteService.CreateNoteAsync(note);
+
+    DateTime currentTime = DateTime.Now;
+    await _trackService.TrackDatabaseQueries($"{currentTime} - Método: POST - CreateNote()");
+    await _trackService.TrackDatabaseQueries($"{currentTime} - Dados: Id: {createdNote.Id} Título: {note.Title}, Conteúdo: {note.Content}");
+
     return CreatedAtAction("GetNote", new { id = createdNote.Id }, createdNote);
   }
 
@@ -88,6 +97,9 @@ public class NoteController : ControllerBase
         throw;
       }
     }
+    DateTime currentTime = DateTime.Now;
+    await _trackService.TrackDatabaseQueries($"{currentTime} - Método: PUT - UpdateNote()");
+    await _trackService.TrackDatabaseQueries($"{currentTime} - Dados: Id: {id} Título: {note.Title}, Conteúdo: {note.Content}");
 
     return NoContent();
   }
@@ -102,6 +114,10 @@ public class NoteController : ControllerBase
     }
 
     await _noteService.DeleteNoteAsync(id);
+
+    DateTime currentTime = DateTime.Now;
+    await _trackService.TrackDatabaseQueries($"{currentTime} - Método: DELETE - DeleteNote()");
+    await _trackService.TrackDatabaseQueries($"{currentTime} - Dado: Id: {id}");
 
     return NoContent();
   }
