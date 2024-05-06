@@ -4,3 +4,143 @@
 2024-05-06 01:16:04.143 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.5914ms
 2024-05-06 01:16:04.374 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null
 2024-05-06 01:16:04.385 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.8982ms
+2024-05-06 01:21:15.831 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null
+2024-05-06 01:21:15.963 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 132.5851ms
+2024-05-06 01:21:15.995 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 01:21:15.998 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 2.8836ms
+2024-05-06 01:21:16.217 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null
+2024-05-06 01:21:16.332 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 114.831ms
+2024-05-06 01:21:55.902 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note?pageNumber=2&pageSize=3 - null null
+2024-05-06 01:21:55.909 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-06 01:21:57.146 -03:00 [INF] Executed DbCommand (41ms) [Parameters=[@__p_0='3'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_0 OFFSET @__p_0
+2024-05-06 01:21:57.229 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note?pageNumber=2&pageSize=3 - 200 null application/json; charset=utf-8 1326.6842ms
+2024-05-06 01:34:41.162 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-06 01:34:41.164 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-06 01:34:41.218 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_1 OFFSET @__p_0
+2024-05-06 01:34:41.223 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 60.7786ms
+2024-05-06 01:34:58.873 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-06 01:34:58.873 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-06 01:34:58.947 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_1 OFFSET @__p_0
+2024-05-06 01:34:58.950 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 76.7415ms
+2024-05-06 01:35:07.926 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5036/v1/note/ - null null
+2024-05-06 01:35:07.927 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5036/v1/note/ - 204 null null 0.8898ms
+2024-05-06 01:35:07.929 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/note/ - application/json 41
+2024-05-06 01:35:07.929 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.CreateNote (take-note)'
+2024-05-06 01:35:08.058 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[@p0='texte here' (Nullable = false) (Size = 4000), @p1='2024-05-06T04:35:07.9502521Z' (DbType = DateTime), @p2='titulo' (Nullable = false) (Size = 4000), @p3='0001-01-01T00:00:00.0000000' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Notes` (`Content`, `CreatedAt`, `Title`, `UpdatedAt`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Notes`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2024-05-06 01:35:08.120 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/note/ - 201 null application/json; charset=utf-8 191.0926ms
+2024-05-06 01:35:08.213 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-06 01:35:08.213 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-06 01:35:08.227 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_1 OFFSET @__p_0
+2024-05-06 01:35:08.231 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 17.9421ms
+2024-05-06 02:06:31.683 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null
+2024-05-06 02:06:31.793 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 110.4672ms
+2024-05-06 02:06:31.815 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 02:06:31.817 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 1.8876ms
+2024-05-06 02:06:31.955 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null
+2024-05-06 02:06:32.046 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.6062ms
+2024-05-06 02:06:41.575 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/export/csv - null null
+2024-05-06 02:06:41.583 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.ExportarCsv (take-note)'
+2024-05-06 02:06:41.881 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/export/csv - 200 52461 text/csv 306.2648ms
+2024-05-06 02:06:48.115 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/export/xls - null null
+2024-05-06 02:06:48.117 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.ExportarXls (take-note)'
+2024-05-06 02:06:49.029 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `l`.`Id`, `l`.`Content`, `l`.`Date`
+FROM `LogEntrys` AS `l`
+2024-05-06 02:06:49.787 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/export/xls - 200 8806 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 1671.7827ms
+2024-05-06 02:10:45.072 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/export/prepare - null 0
+2024-05-06 02:10:45.074 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.PrepareLog (take-note)'
+2024-05-06 02:10:45.132 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/export/prepare - 200 0 null 59.7484ms
+2024-05-06 02:14:02.480 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null
+2024-05-06 02:14:02.489 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 8.4777ms
+2024-05-06 02:14:02.533 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 02:14:02.534 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4955ms
+2024-05-06 02:14:02.760 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null
+2024-05-06 02:14:02.771 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.2601ms
+2024-05-06 02:14:08.035 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/export/xls - null null
+2024-05-06 02:14:08.035 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.ExportarXls (take-note)'
+2024-05-06 02:14:08.074 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/export/xls - 500 null text/plain; charset=utf-8 38.9609ms
+2024-05-06 02:14:18.524 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/export/xls - null null
+2024-05-06 02:14:18.525 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.ExportarXls (take-note)'
+2024-05-06 02:14:18.537 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/export/xls - 500 null text/plain; charset=utf-8 12.954ms
+2024-05-06 02:15:19.792 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/export/prepare - null 0
+2024-05-06 02:15:19.792 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.PrepareLog (take-note)'
+2024-05-06 02:15:19.804 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/export/prepare - 500 null text/plain; charset=utf-8 12.6481ms
+2024-05-05 23:28:24.587 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null
+2024-05-05 23:28:24.588 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 0.8226ms
+2024-05-05 23:28:24.625 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-05 23:28:24.626 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2738ms
+2024-05-05 23:28:24.755 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null
+2024-05-05 23:28:24.759 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.0461ms
+2024-05-05 23:28:53.921 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null
+2024-05-05 23:28:53.927 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 6.1137ms
+2024-05-05 23:28:53.949 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-05 23:28:53.949 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2736ms
+2024-05-05 23:28:54.031 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null
+2024-05-05 23:28:54.037 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.8865ms
+2024-05-05 23:29:01.669 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null
+2024-05-05 23:29:01.675 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 5.9205ms
+2024-05-05 23:29:01.691 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-05 23:29:01.692 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.277ms
+2024-05-05 23:29:01.757 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null
+2024-05-05 23:29:01.763 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.7681ms
+2024-05-05 23:29:07.532 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null
+2024-05-05 23:29:07.539 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 7.1671ms
+2024-05-05 23:29:07.557 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-05 23:29:07.557 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2065ms
+2024-05-05 23:29:07.623 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null
+2024-05-05 23:29:07.627 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.4097ms
+2024-05-05 23:29:21.910 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null
+2024-05-05 23:29:21.915 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 5.2486ms
+2024-05-05 23:29:21.933 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-05 23:29:21.934 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.208ms
+2024-05-05 23:29:21.996 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null
+2024-05-05 23:29:22.000 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.6397ms
+2024-05-05 23:29:30.358 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null
+2024-05-05 23:29:30.364 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 5.7017ms
+2024-05-05 23:29:30.384 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-05 23:29:30.384 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.274ms
+2024-05-05 23:29:30.445 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null
+2024-05-05 23:29:30.449 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.1999ms
+2024-05-05 23:29:51.209 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null
+2024-05-05 23:29:51.210 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 1.0467ms
+2024-05-05 23:29:51.232 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-05 23:29:51.232 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.248ms
+2024-05-05 23:29:51.292 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null
+2024-05-05 23:29:51.294 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.9072ms
+2024-05-05 23:29:56.855 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note?pageNumber=1&pageSize=10 - null null
+2024-05-05 23:29:56.855 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 23:29:57.132 -03:00 [INF] Executed DbCommand (25ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_1 OFFSET @__p_0
+2024-05-05 23:29:57.162 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 307.3263ms
+2024-05-05 23:30:11.465 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/export/prepare - null 0
+2024-05-05 23:30:11.466 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.PrepareLog (take-note)'
+2024-05-05 23:30:11.481 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/export/prepare - 500 null text/plain; charset=utf-8 16.0747ms
+2024-05-05 23:30:42.745 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/export/prepare - null 0
+2024-05-05 23:30:42.746 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.PrepareLog (take-note)'
+2024-05-05 23:30:42.758 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/export/prepare - 500 null text/plain; charset=utf-8 12.5237ms
+2024-05-06 00:03:06.880 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-06 00:03:06.884 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-06 00:03:06.925 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_1 OFFSET @__p_0
+2024-05-06 00:03:06.931 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 50.8904ms

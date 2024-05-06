@@ -1,6 +1,8 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using take_note.Domain.Models;
+using take_note.DTOs;
 using take_note.Services;
 
 namespace take_note.Domain;
@@ -11,21 +13,23 @@ public class NoteController : ControllerBase
 {
   private readonly INoteService _noteService;
   private readonly MySqlDbContext _context;
-
   private readonly ITrackService _trackService;
+  private readonly IMapper _mapper;
 
 
-  public NoteController(INoteService noteService, MySqlDbContext context, ITrackService trackService)
+  public NoteController(INoteService noteService, MySqlDbContext context, ITrackService trackService, IMapper mapper)
   {
     _noteService = noteService;
     _context = context;
     _trackService = trackService;
+    _mapper = mapper;
   }
 
   [HttpGet]
   public async Task<IActionResult> GetNotes(int pageNumber = 1, int pageSize = 10)
   {
     var notes = await _noteService.GetAllNotesAsync(pageNumber, pageSize);
+    //var notesDTO = _mapper.Map<List<NoteDTO>>(notes);
 
     DateTime currentTime = DateTime.Now;
     await _trackService.TrackDatabaseQueries($"{currentTime} - Método: GET - GetAllNotesAsync()");

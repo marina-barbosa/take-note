@@ -1859,3 +1859,93 @@ Sal e pimenta-do-reino a gosto
 
 
 06/05/2024 01:35:08 - Dados: Id: 18 Título: titulo, Conteúdo: texte here
+05/05/2024 23:29:57 - Método: GET - GetAllNotesAsync()
+05/05/2024 23:29:57 - Dados: Id: 4 Título: teclados, Conteúdo: redragon shaco, magic-wand, dukharo 66%
+05/05/2024 23:29:57 - Dados: Id: 12 Título: um titulo para testar update, Conteúdo: testando updateeeeeee
+05/05/2024 23:29:57 - Dados: Id: 15 Título: teste, Conteúdo: 213
+456
+876
+32
+4257
+43
+826
+4
+567
+43
+05/05/2024 23:29:57 - Dados: Id: 16 Título: titulo, Conteúdo: texte here
+05/05/2024 23:29:57 - Dados: Id: 17 Título: receita, Conteúdo: ingredientes
+
+1 baguete pequena
+
+1 dente de alho
+
+2 tomates italianos grandes e bem maduros
+
+2 ramos de manjericão
+
+Azeite a gosto
+
+Sal e pimenta-do-reino a gosto
+
+
+05/05/2024 23:29:57 - Dados: Id: 18 Título: titulo, Conteúdo: texte here
+05/05/2024 23:59:35 - Método: GET - GetAllNotesAsync()
+05/05/2024 23:59:35 - Dados: Id: 4 Título: teclados, Conteúdo: redragon shaco, magic-wand, dukharo 66%
+05/05/2024 23:59:35 - Dados: Id: 12 Título: um titulo para testar update, Conteúdo: testando updateeeeeee
+05/05/2024 23:59:35 - Dados: Id: 15 Título: teste, Conteúdo: 213
+456
+876
+32
+4257
+43
+826
+4
+567
+43
+05/05/2024 23:59:35 - Dados: Id: 16 Título: titulo, Conteúdo: texte here
+05/05/2024 23:59:35 - Dados: Id: 17 Título: receita, Conteúdo: ingredientes
+
+1 baguete pequena
+
+1 dente de alho
+
+2 tomates italianos grandes e bem maduros
+
+2 ramos de manjericão
+
+Azeite a gosto
+
+Sal e pimenta-do-reino a gosto
+
+
+05/05/2024 23:59:35 - Dados: Id: 18 Título: titulo, Conteúdo: texte here
+06/05/2024 00:03:06 - Método: GET - GetAllNotesAsync()
+06/05/2024 00:03:06 - Dados: Id: 4 Título: teclados, Conteúdo: redragon shaco, magic-wand, dukharo 66%
+06/05/2024 00:03:06 - Dados: Id: 12 Título: um titulo para testar update, Conteúdo: testando updateeeeeee
+06/05/2024 00:03:06 - Dados: Id: 15 Título: teste, Conteúdo: 213
+456
+876
+32
+4257
+43
+826
+4
+567
+43
+06/05/2024 00:03:06 - Dados: Id: 16 Título: titulo, Conteúdo: texte here
+06/05/2024 00:03:06 - Dados: Id: 17 Título: receita, Conteúdo: ingredientes
+
+1 baguete pequena
+
+1 dente de alho
+
+2 tomates italianos grandes e bem maduros
+
+2 ramos de manjericão
+
+Azeite a gosto
+
+Sal e pimenta-do-reino a gosto
+
+
+06/05/2024 00:03:06 - Dados: Id: 18 Título: titulo, Conteúdo: texte here

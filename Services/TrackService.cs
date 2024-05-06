@@ -45,7 +45,7 @@ public class TrackService : ITrackService
           Content = record.Content
         });
       }
-
+      Console.WriteLine("FIM IMPORT LOG <<<<<<<<<<<<<<<<<<<<<<<");
       _context.SaveChanges();
     }
     catch (Exception ex)
@@ -101,7 +101,7 @@ public class TrackService : ITrackService
       Console.WriteLine($"Erro ao ler o arquivo de log: {ex.Message}");
       throw;
     }
-
+    Console.WriteLine("FIM READ LOG <<<<<<<<<<<<<<<<<<<<<<<");
     return logRecords;
   }
 
@@ -121,7 +121,7 @@ public class TrackService : ITrackService
     {
       dados.ForEach(d => dt.Rows.Add(d.Date, d.Content));
     }
-
+    Console.WriteLine("FIM GET DADOS <<<<<<<<<<<<<<<<<<<<<<<");
     return dt;
   }
 

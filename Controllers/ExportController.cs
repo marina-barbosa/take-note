@@ -12,7 +12,7 @@ public class ExportController : ControllerBase
 
   private readonly ITrackService _trackService;
   private readonly string arquivo = "registro.txt";
-  private readonly string arquivoSerilog = "serilogs/log20240424.txt";
+  private readonly string arquivoSerilog = "serilogs/log20240506.txt";
 
   public ExportController(ITrackService trackService)
   {

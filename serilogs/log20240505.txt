@@ -512,3 +512,2215 @@ FROM `Notes` AS `n`
 SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
 FROM `Notes` AS `n`
 2024-05-05 22:06:13.318 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 21.6138ms
+2024-05-05 23:37:16.010 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null
+2024-05-05 23:37:16.162 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 153.3869ms
+2024-05-05 23:37:16.193 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-05 23:37:16.196 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 2.6669ms
+2024-05-05 23:37:16.295 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null
+2024-05-05 23:37:16.385 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 89.1082ms
+2024-05-05 23:37:25.786 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/export/prepare - null 0
+2024-05-05 23:37:25.798 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.PrepareLog (take-note)'
+2024-05-05 23:37:26.728 -03:00 [INF] Executed DbCommand (59ms) [Parameters=[@p0='2024-05-06 01:16:04.078 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p1='2024-05-06T01:16:04.0880000' (DbType = DateTime), @p2='2024-05-06 01:16:04.088 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 11.3799ms' (Nullable = false) (Size = 4000), @p3='2024-05-06T01:16:04.1430000' (DbType = DateTime), @p4='2024-05-06 01:16:04.143 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p5='2024-05-06T01:16:04.1430000' (DbType = DateTime), @p6='2024-05-06 01:16:04.143 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.5914ms' (Nullable = false) (Size = 4000), @p7='2024-05-06T01:16:04.3740000' (DbType = DateTime), @p8='2024-05-06 01:16:04.374 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p9='2024-05-06T01:16:04.3850000' (DbType = DateTime), @p10='2024-05-06 01:16:04.385 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.8982ms' (Nullable = false) (Size = 4000), @p11='2024-05-06T01:21:15.8310000' (DbType = DateTime), @p12='2024-05-06 01:21:15.831 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p13='2024-05-06T01:21:15.9630000' (DbType = DateTime), @p14='2024-05-06 01:21:15.963 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 132.5851ms' (Nullable = false) (Size = 4000), @p15='2024-05-06T01:21:15.9950000' (DbType = DateTime), @p16='2024-05-06 01:21:15.995 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p17='2024-05-06T01:21:15.9980000' (DbType = DateTime), @p18='2024-05-06 01:21:15.998 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 2.8836ms' (Nullable = false) (Size = 4000), @p19='2024-05-06T01:21:16.2170000' (DbType = DateTime), @p20='2024-05-06 01:21:16.217 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p21='2024-05-06T01:21:16.3320000' (DbType = DateTime), @p22='2024-05-06 01:21:16.332 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 114.831ms' (Nullable = false) (Size = 4000), @p23='2024-05-06T01:21:55.9020000' (DbType = DateTime), @p24='2024-05-06 01:21:55.902 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note?pageNumber=2&pageSize=3 - null null' (Nullable = false) (Size = 4000), @p25='2024-05-06T01:21:55.9090000' (DbType = DateTime), @p26='2024-05-06 01:21:55.909 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'' (Nullable = false) (Size = 4000), @p27='2024-05-06T01:21:57.1460000' (DbType = DateTime), @p28='2024-05-06 01:21:57.146 -03:00 [INF] Executed DbCommand (41ms) [Parameters=[@__p_0='3'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_0 OFFSET @__p_0' (Nullable = false) (Size = 4000), @p29='2024-05-06T01:21:57.2290000' (DbType = DateTime), @p30='2024-05-06 01:21:57.229 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note?pageNumber=2&pageSize=3 - 200 null application/json; charset=utf-8 1326.6842ms' (Nullable = false) (Size = 4000), @p31='2024-05-06T01:34:41.1620000' (DbType = DateTime), @p32='2024-05-06 01:34:41.162 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null' (Nullable = false) (Size = 4000), @p33='2024-05-06T01:34:41.1640000' (DbType = DateTime), @p34='2024-05-06 01:34:41.164 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'' (Nullable = false) (Size = 4000), @p35='2024-05-06T01:34:41.2180000' (DbType = DateTime), @p36='2024-05-06 01:34:41.218 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_1 OFFSET @__p_0' (Nullable = false) (Size = 4000), @p37='2024-05-06T01:34:41.2230000' (DbType = DateTime), @p38='2024-05-06 01:34:41.223 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 60.7786ms' (Nullable = false) (Size = 4000), @p39='2024-05-06T01:34:58.8730000' (DbType = DateTime), @p40='2024-05-06 01:34:58.873 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null' (Nullable = false) (Size = 4000), @p41='2024-05-06T01:34:58.8730000' (DbType = DateTime), @p42='2024-05-06 01:34:58.873 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'' (Nullable = false) (Size = 4000), @p43='2024-05-06T01:34:58.9470000' (DbType = DateTime), @p44='2024-05-06 01:34:58.947 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_1 OFFSET @__p_0' (Nullable = false) (Size = 4000), @p45='2024-05-06T01:34:58.9500000' (DbType = DateTime), @p46='2024-05-06 01:34:58.950 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 76.7415ms' (Nullable = false) (Size = 4000), @p47='2024-05-06T01:35:07.9260000' (DbType = DateTime), @p48='2024-05-06 01:35:07.926 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5036/v1/note/ - null null' (Nullable = false) (Size = 4000), @p49='2024-05-06T01:35:07.9270000' (DbType = DateTime), @p50='2024-05-06 01:35:07.927 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5036/v1/note/ - 204 null null 0.8898ms' (Nullable = false) (Size = 4000), @p51='2024-05-06T01:35:07.9290000' (DbType = DateTime), @p52='2024-05-06 01:35:07.929 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/note/ - application/json 41' (Nullable = false) (Size = 4000), @p53='2024-05-06T01:35:07.9290000' (DbType = DateTime), @p54='2024-05-06 01:35:07.929 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.CreateNote (take-note)'' (Nullable = false) (Size = 4000), @p55='2024-05-06T01:35:08.0580000' (DbType = DateTime), @p56='2024-05-06 01:35:08.058 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[@p0='texte here' (Nullable = false) (Size = 4000), @p1='2024-05-06T04:35:07.9502521Z' (DbType = DateTime), @p2='titulo' (Nullable = false) (Size = 4000), @p3='0001-01-01T00:00:00.0000000' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Notes` (`Content`, `CreatedAt`, `Title`, `UpdatedAt`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Notes`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();' (Nullable = false) (Size = 4000), @p57='2024-05-06T01:35:08.1200000' (DbType = DateTime), @p58='2024-05-06 01:35:08.120 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/note/ - 201 null application/json; charset=utf-8 191.0926ms' (Nullable = false) (Size = 4000), @p59='2024-05-06T01:35:08.2130000' (DbType = DateTime), @p60='2024-05-06 01:35:08.213 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null' (Nullable = false) (Size = 4000), @p61='2024-05-06T01:35:08.2130000' (DbType = DateTime), @p62='2024-05-06 01:35:08.213 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'' (Nullable = false) (Size = 4000), @p63='2024-05-06T01:35:08.2270000' (DbType = DateTime), @p64='2024-05-06 01:35:08.227 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_1 OFFSET @__p_0' (Nullable = false) (Size = 4000), @p65='2024-05-06T01:35:08.2310000' (DbType = DateTime), @p66='2024-05-06 01:35:08.231 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 17.9421ms' (Nullable = false) (Size = 4000), @p67='2024-05-06T02:06:31.6830000' (DbType = DateTime), @p68='2024-05-06 02:06:31.683 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p69='2024-05-06T02:06:31.7930000' (DbType = DateTime), @p70='2024-05-06 02:06:31.793 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 110.4672ms' (Nullable = false) (Size = 4000), @p71='2024-05-06T02:06:31.8150000' (DbType = DateTime), @p72='2024-05-06 02:06:31.815 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p73='2024-05-06T02:06:31.8170000' (DbType = DateTime), @p74='2024-05-06 02:06:31.817 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 1.8876ms' (Nullable = false) (Size = 4000), @p75='2024-05-06T02:06:31.9550000' (DbType = DateTime), @p76='2024-05-06 02:06:31.955 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p77='2024-05-06T02:06:32.0460000' (DbType = DateTime), @p78='2024-05-06 02:06:32.046 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.6062ms' (Nullable = false) (Size = 4000), @p79='2024-05-06T02:06:41.5750000' (DbType = DateTime), @p80='2024-05-06 02:06:41.575 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/export/csv - null null' (Nullable = false) (Size = 4000), @p81='2024-05-06T02:06:41.5830000' (DbType = DateTime), @p82='2024-05-06 02:06:41.583 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.ExportarCsv (take-note)'' (Nullable = false) (Size = 4000), @p83='2024-05-06T02:06:41.8810000' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p2, @p3);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p4, @p5);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p6, @p7);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p8, @p9);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p10, @p11);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p12, @p13);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p14, @p15);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p16, @p17);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p18, @p19);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p20, @p21);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p22, @p23);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p24, @p25);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p26, @p27);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p28, @p29);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p30, @p31);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p32, @p33);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p34, @p35);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p36, @p37);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p38, @p39);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p40, @p41);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p42, @p43);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p44, @p45);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p46, @p47);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p48, @p49);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p50, @p51);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p52, @p53);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p54, @p55);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p56, @p57);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p58, @p59);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p60, @p61);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p62, @p63);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p64, @p65);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p66, @p67);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p68, @p69);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p70, @p71);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p72, @p73);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p74, @p75);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p76, @p77);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p78, @p79);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p80, @p81);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p82, @p83);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2024-05-05 23:37:26.763 -03:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='2024-05-06 02:06:41.881 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/export/csv - 200 52461 text/csv 306.2648ms' (Nullable = false) (Size = 4000), @p1='2024-05-06T02:06:48.1150000' (DbType = DateTime), @p2='2024-05-06 02:06:48.115 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/export/xls - null null' (Nullable = false) (Size = 4000), @p3='2024-05-06T02:06:48.1170000' (DbType = DateTime), @p4='2024-05-06 02:06:48.117 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.ExportarXls (take-note)'' (Nullable = false) (Size = 4000), @p5='2024-05-06T02:06:49.0290000' (DbType = DateTime), @p6='2024-05-06 02:06:49.029 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `l`.`Id`, `l`.`Content`, `l`.`Date`
+FROM `LogEntrys` AS `l`' (Nullable = false) (Size = 4000), @p7='2024-05-06T02:06:49.7870000' (DbType = DateTime), @p8='2024-05-06 02:06:49.787 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/export/xls - 200 8806 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 1671.7827ms' (Nullable = false) (Size = 4000), @p9='2024-05-06T02:10:45.0720000' (DbType = DateTime), @p10='2024-05-06 02:10:45.072 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/export/prepare - null 0' (Nullable = false) (Size = 4000), @p11='2024-05-06T02:10:45.0740000' (DbType = DateTime), @p12='2024-05-06 02:10:45.074 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.PrepareLog (take-note)'' (Nullable = false) (Size = 4000), @p13='2024-05-06T02:10:45.1320000' (DbType = DateTime), @p14='2024-05-06 02:10:45.132 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/export/prepare - 200 0 null 59.7484ms' (Nullable = false) (Size = 4000), @p15='2024-05-06T02:14:02.4800000' (DbType = DateTime), @p16='2024-05-06 02:14:02.480 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p17='2024-05-06T02:14:02.4890000' (DbType = DateTime), @p18='2024-05-06 02:14:02.489 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 8.4777ms' (Nullable = false) (Size = 4000), @p19='2024-05-06T02:14:02.5330000' (DbType = DateTime), @p20='2024-05-06 02:14:02.533 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p21='2024-05-06T02:14:02.5340000' (DbType = DateTime), @p22='2024-05-06 02:14:02.534 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4955ms' (Nullable = false) (Size = 4000), @p23='2024-05-06T02:14:02.7600000' (DbType = DateTime), @p24='2024-05-06 02:14:02.760 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p25='2024-05-06T02:14:02.7710000' (DbType = DateTime), @p26='2024-05-06 02:14:02.771 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.2601ms' (Nullable = false) (Size = 4000), @p27='2024-05-06T02:14:08.0350000' (DbType = DateTime), @p28='2024-05-06 02:14:08.035 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/export/xls - null null' (Nullable = false) (Size = 4000), @p29='2024-05-06T02:14:08.0350000' (DbType = DateTime), @p30='2024-05-06 02:14:08.035 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.ExportarXls (take-note)'' (Nullable = false) (Size = 4000), @p31='2024-05-06T02:14:08.0740000' (DbType = DateTime), @p32='2024-05-06 02:14:08.074 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/export/xls - 500 null text/plain; charset=utf-8 38.9609ms' (Nullable = false) (Size = 4000), @p33='2024-05-06T02:14:18.5240000' (DbType = DateTime), @p34='2024-05-06 02:14:18.524 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/export/xls - null null' (Nullable = false) (Size = 4000), @p35='2024-05-06T02:14:18.5250000' (DbType = DateTime), @p36='2024-05-06 02:14:18.525 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.ExportarXls (take-note)'' (Nullable = false) (Size = 4000), @p37='2024-05-06T02:14:18.5370000' (DbType = DateTime), @p38='2024-05-06 02:14:18.537 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/export/xls - 500 null text/plain; charset=utf-8 12.954ms' (Nullable = false) (Size = 4000), @p39='2024-05-06T02:15:19.7920000' (DbType = DateTime), @p40='2024-05-06 02:15:19.792 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/export/prepare - null 0' (Nullable = false) (Size = 4000), @p41='2024-05-06T02:15:19.7920000' (DbType = DateTime), @p42='2024-05-06 02:15:19.792 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.PrepareLog (take-note)'' (Nullable = false) (Size = 4000), @p43='2024-05-06T02:15:19.8040000' (DbType = DateTime), @p44='2024-05-06 02:15:19.804 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/export/prepare - 500 null text/plain; charset=utf-8 12.6481ms' (Nullable = false) (Size = 4000), @p45='2024-05-05T23:28:24.5870000' (DbType = DateTime), @p46='2024-05-05 23:28:24.587 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p47='2024-05-05T23:28:24.5880000' (DbType = DateTime), @p48='2024-05-05 23:28:24.588 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 0.8226ms' (Nullable = false) (Size = 4000), @p49='2024-05-05T23:28:24.6250000' (DbType = DateTime), @p50='2024-05-05 23:28:24.625 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p51='2024-05-05T23:28:24.6260000' (DbType = DateTime), @p52='2024-05-05 23:28:24.626 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2738ms' (Nullable = false) (Size = 4000), @p53='2024-05-05T23:28:24.7550000' (DbType = DateTime), @p54='2024-05-05 23:28:24.755 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p55='2024-05-05T23:28:24.7590000' (DbType = DateTime), @p56='2024-05-05 23:28:24.759 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.0461ms' (Nullable = false) (Size = 4000), @p57='2024-05-05T23:28:53.9210000' (DbType = DateTime), @p58='2024-05-05 23:28:53.921 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p59='2024-05-05T23:28:53.9270000' (DbType = DateTime), @p60='2024-05-05 23:28:53.927 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 6.1137ms' (Nullable = false) (Size = 4000), @p61='2024-05-05T23:28:53.9490000' (DbType = DateTime), @p62='2024-05-05 23:28:53.949 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p63='2024-05-05T23:28:53.9490000' (DbType = DateTime), @p64='2024-05-05 23:28:53.949 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2736ms' (Nullable = false) (Size = 4000), @p65='2024-05-05T23:28:54.0310000' (DbType = DateTime), @p66='2024-05-05 23:28:54.031 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p67='2024-05-05T23:28:54.0370000' (DbType = DateTime), @p68='2024-05-05 23:28:54.037 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.8865ms' (Nullable = false) (Size = 4000), @p69='2024-05-05T23:29:01.6690000' (DbType = DateTime), @p70='2024-05-05 23:29:01.669 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p71='2024-05-05T23:29:01.6750000' (DbType = DateTime), @p72='2024-05-05 23:29:01.675 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 5.9205ms' (Nullable = false) (Size = 4000), @p73='2024-05-05T23:29:01.6910000' (DbType = DateTime), @p74='2024-05-05 23:29:01.691 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p75='2024-05-05T23:29:01.6920000' (DbType = DateTime), @p76='2024-05-05 23:29:01.692 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.277ms' (Nullable = false) (Size = 4000), @p77='2024-05-05T23:29:01.7570000' (DbType = DateTime), @p78='2024-05-05 23:29:01.757 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p79='2024-05-05T23:29:01.7630000' (DbType = DateTime), @p80='2024-05-05 23:29:01.763 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.7681ms' (Nullable = false) (Size = 4000), @p81='2024-05-05T23:29:07.5320000' (DbType = DateTime), @p82='2024-05-05 23:29:07.532 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p83='2024-05-05T23:29:07.5390000' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p2, @p3);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p4, @p5);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p6, @p7);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p8, @p9);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p10, @p11);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p12, @p13);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p14, @p15);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p16, @p17);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p18, @p19);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p20, @p21);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p22, @p23);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p24, @p25);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p26, @p27);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p28, @p29);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p30, @p31);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p32, @p33);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p34, @p35);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p36, @p37);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p38, @p39);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p40, @p41);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p42, @p43);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p44, @p45);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p46, @p47);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p48, @p49);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p50, @p51);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p52, @p53);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p54, @p55);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p56, @p57);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p58, @p59);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p60, @p61);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p62, @p63);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p64, @p65);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p66, @p67);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p68, @p69);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p70, @p71);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p72, @p73);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p74, @p75);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p76, @p77);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p78, @p79);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p80, @p81);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p82, @p83);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2024-05-05 23:37:26.777 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='2024-05-05 23:29:07.539 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 7.1671ms' (Nullable = false) (Size = 4000), @p1='2024-05-05T23:29:07.5570000' (DbType = DateTime), @p2='2024-05-05 23:29:07.557 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p3='2024-05-05T23:29:07.5570000' (DbType = DateTime), @p4='2024-05-05 23:29:07.557 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2065ms' (Nullable = false) (Size = 4000), @p5='2024-05-05T23:29:07.6230000' (DbType = DateTime), @p6='2024-05-05 23:29:07.623 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p7='2024-05-05T23:29:07.6270000' (DbType = DateTime), @p8='2024-05-05 23:29:07.627 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.4097ms' (Nullable = false) (Size = 4000), @p9='2024-05-05T23:29:21.9100000' (DbType = DateTime), @p10='2024-05-05 23:29:21.910 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p11='2024-05-05T23:29:21.9150000' (DbType = DateTime), @p12='2024-05-05 23:29:21.915 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 5.2486ms' (Nullable = false) (Size = 4000), @p13='2024-05-05T23:29:21.9330000' (DbType = DateTime), @p14='2024-05-05 23:29:21.933 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p15='2024-05-05T23:29:21.9340000' (DbType = DateTime), @p16='2024-05-05 23:29:21.934 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.208ms' (Nullable = false) (Size = 4000), @p17='2024-05-05T23:29:21.9960000' (DbType = DateTime), @p18='2024-05-05 23:29:21.996 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p19='2024-05-05T23:29:22.0000000' (DbType = DateTime), @p20='2024-05-05 23:29:22.000 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.6397ms' (Nullable = false) (Size = 4000), @p21='2024-05-05T23:29:30.3580000' (DbType = DateTime), @p22='2024-05-05 23:29:30.358 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p23='2024-05-05T23:29:30.3640000' (DbType = DateTime), @p24='2024-05-05 23:29:30.364 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 5.7017ms' (Nullable = false) (Size = 4000), @p25='2024-05-05T23:29:30.3840000' (DbType = DateTime), @p26='2024-05-05 23:29:30.384 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p27='2024-05-05T23:29:30.3840000' (DbType = DateTime), @p28='2024-05-05 23:29:30.384 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.274ms' (Nullable = false) (Size = 4000), @p29='2024-05-05T23:29:30.4450000' (DbType = DateTime), @p30='2024-05-05 23:29:30.445 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p31='2024-05-05T23:29:30.4490000' (DbType = DateTime), @p32='2024-05-05 23:29:30.449 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.1999ms' (Nullable = false) (Size = 4000), @p33='2024-05-05T23:29:51.2090000' (DbType = DateTime), @p34='2024-05-05 23:29:51.209 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p35='2024-05-05T23:29:51.2100000' (DbType = DateTime), @p36='2024-05-05 23:29:51.210 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 1.0467ms' (Nullable = false) (Size = 4000), @p37='2024-05-05T23:29:51.2320000' (DbType = DateTime), @p38='2024-05-05 23:29:51.232 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p39='2024-05-05T23:29:51.2320000' (DbType = DateTime), @p40='2024-05-05 23:29:51.232 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.248ms' (Nullable = false) (Size = 4000), @p41='2024-05-05T23:29:51.2920000' (DbType = DateTime), @p42='2024-05-05 23:29:51.292 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p43='2024-05-05T23:29:51.2940000' (DbType = DateTime), @p44='2024-05-05 23:29:51.294 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.9072ms' (Nullable = false) (Size = 4000), @p45='2024-05-05T23:29:56.8550000' (DbType = DateTime), @p46='2024-05-05 23:29:56.855 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note?pageNumber=1&pageSize=10 - null null' (Nullable = false) (Size = 4000), @p47='2024-05-05T23:29:56.8550000' (DbType = DateTime), @p48='2024-05-05 23:29:56.855 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'' (Nullable = false) (Size = 4000), @p49='2024-05-05T23:29:57.1320000' (DbType = DateTime), @p50='2024-05-05 23:29:57.132 -03:00 [INF] Executed DbCommand (25ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_1 OFFSET @__p_0' (Nullable = false) (Size = 4000), @p51='2024-05-05T23:29:57.1620000' (DbType = DateTime), @p52='2024-05-05 23:29:57.162 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 307.3263ms' (Nullable = false) (Size = 4000), @p53='2024-05-05T23:30:11.4650000' (DbType = DateTime), @p54='2024-05-05 23:30:11.465 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/export/prepare - null 0' (Nullable = false) (Size = 4000), @p55='2024-05-05T23:30:11.4660000' (DbType = DateTime), @p56='2024-05-05 23:30:11.466 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.PrepareLog (take-note)'' (Nullable = false) (Size = 4000), @p57='2024-05-05T23:30:11.4810000' (DbType = DateTime), @p58='2024-05-05 23:30:11.481 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/export/prepare - 500 null text/plain; charset=utf-8 16.0747ms' (Nullable = false) (Size = 4000), @p59='2024-05-05T23:30:42.7450000' (DbType = DateTime), @p60='2024-05-05 23:30:42.745 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/export/prepare - null 0' (Nullable = false) (Size = 4000), @p61='2024-05-05T23:30:42.7460000' (DbType = DateTime), @p62='2024-05-05 23:30:42.746 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.PrepareLog (take-note)'' (Nullable = false) (Size = 4000), @p63='2024-05-05T23:30:42.7580000' (DbType = DateTime), @p64='2024-05-05 23:30:42.758 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/export/prepare - 500 null text/plain; charset=utf-8 12.5237ms' (Nullable = false) (Size = 4000), @p65='2024-05-06T02:37:26.0918696Z' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p2, @p3);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p4, @p5);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p6, @p7);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p8, @p9);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p10, @p11);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p12, @p13);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p14, @p15);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p16, @p17);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p18, @p19);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p20, @p21);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p22, @p23);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p24, @p25);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p26, @p27);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p28, @p29);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p30, @p31);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p32, @p33);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p34, @p35);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p36, @p37);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p38, @p39);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p40, @p41);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p42, @p43);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p44, @p45);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p46, @p47);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p48, @p49);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p50, @p51);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p52, @p53);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p54, @p55);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p56, @p57);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p58, @p59);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p60, @p61);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p62, @p63);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p64, @p65);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2024-05-05 23:37:26.823 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/export/prepare - 200 0 null 1036.889ms
+2024-05-05 23:37:35.314 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/export/xls - null null
+2024-05-05 23:37:35.316 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.ExportarXls (take-note)'
+2024-05-05 23:37:35.737 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='2024-05-06 01:16:04.078 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p1='2024-05-06T01:16:04.0880000' (DbType = DateTime), @p2='2024-05-06 01:16:04.088 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 11.3799ms' (Nullable = false) (Size = 4000), @p3='2024-05-06T01:16:04.1430000' (DbType = DateTime), @p4='2024-05-06 01:16:04.143 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p5='2024-05-06T01:16:04.1430000' (DbType = DateTime), @p6='2024-05-06 01:16:04.143 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.5914ms' (Nullable = false) (Size = 4000), @p7='2024-05-06T01:16:04.3740000' (DbType = DateTime), @p8='2024-05-06 01:16:04.374 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p9='2024-05-06T01:16:04.3850000' (DbType = DateTime), @p10='2024-05-06 01:16:04.385 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.8982ms' (Nullable = false) (Size = 4000), @p11='2024-05-06T01:21:15.8310000' (DbType = DateTime), @p12='2024-05-06 01:21:15.831 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p13='2024-05-06T01:21:15.9630000' (DbType = DateTime), @p14='2024-05-06 01:21:15.963 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 132.5851ms' (Nullable = false) (Size = 4000), @p15='2024-05-06T01:21:15.9950000' (DbType = DateTime), @p16='2024-05-06 01:21:15.995 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p17='2024-05-06T01:21:15.9980000' (DbType = DateTime), @p18='2024-05-06 01:21:15.998 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 2.8836ms' (Nullable = false) (Size = 4000), @p19='2024-05-06T01:21:16.2170000' (DbType = DateTime), @p20='2024-05-06 01:21:16.217 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p21='2024-05-06T01:21:16.3320000' (DbType = DateTime), @p22='2024-05-06 01:21:16.332 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 114.831ms' (Nullable = false) (Size = 4000), @p23='2024-05-06T01:21:55.9020000' (DbType = DateTime), @p24='2024-05-06 01:21:55.902 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note?pageNumber=2&pageSize=3 - null null' (Nullable = false) (Size = 4000), @p25='2024-05-06T01:21:55.9090000' (DbType = DateTime), @p26='2024-05-06 01:21:55.909 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'' (Nullable = false) (Size = 4000), @p27='2024-05-06T01:21:57.1460000' (DbType = DateTime), @p28='2024-05-06 01:21:57.146 -03:00 [INF] Executed DbCommand (41ms) [Parameters=[@__p_0='3'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_0 OFFSET @__p_0' (Nullable = false) (Size = 4000), @p29='2024-05-06T01:21:57.2290000' (DbType = DateTime), @p30='2024-05-06 01:21:57.229 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note?pageNumber=2&pageSize=3 - 200 null application/json; charset=utf-8 1326.6842ms' (Nullable = false) (Size = 4000), @p31='2024-05-06T01:34:41.1620000' (DbType = DateTime), @p32='2024-05-06 01:34:41.162 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null' (Nullable = false) (Size = 4000), @p33='2024-05-06T01:34:41.1640000' (DbType = DateTime), @p34='2024-05-06 01:34:41.164 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'' (Nullable = false) (Size = 4000), @p35='2024-05-06T01:34:41.2180000' (DbType = DateTime), @p36='2024-05-06 01:34:41.218 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_1 OFFSET @__p_0' (Nullable = false) (Size = 4000), @p37='2024-05-06T01:34:41.2230000' (DbType = DateTime), @p38='2024-05-06 01:34:41.223 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 60.7786ms' (Nullable = false) (Size = 4000), @p39='2024-05-06T01:34:58.8730000' (DbType = DateTime), @p40='2024-05-06 01:34:58.873 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null' (Nullable = false) (Size = 4000), @p41='2024-05-06T01:34:58.8730000' (DbType = DateTime), @p42='2024-05-06 01:34:58.873 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'' (Nullable = false) (Size = 4000), @p43='2024-05-06T01:34:58.9470000' (DbType = DateTime), @p44='2024-05-06 01:34:58.947 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_1 OFFSET @__p_0' (Nullable = false) (Size = 4000), @p45='2024-05-06T01:34:58.9500000' (DbType = DateTime), @p46='2024-05-06 01:34:58.950 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 76.7415ms' (Nullable = false) (Size = 4000), @p47='2024-05-06T01:35:07.9260000' (DbType = DateTime), @p48='2024-05-06 01:35:07.926 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5036/v1/note/ - null null' (Nullable = false) (Size = 4000), @p49='2024-05-06T01:35:07.9270000' (DbType = DateTime), @p50='2024-05-06 01:35:07.927 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5036/v1/note/ - 204 null null 0.8898ms' (Nullable = false) (Size = 4000), @p51='2024-05-06T01:35:07.9290000' (DbType = DateTime), @p52='2024-05-06 01:35:07.929 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/note/ - application/json 41' (Nullable = false) (Size = 4000), @p53='2024-05-06T01:35:07.9290000' (DbType = DateTime), @p54='2024-05-06 01:35:07.929 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.CreateNote (take-note)'' (Nullable = false) (Size = 4000), @p55='2024-05-06T01:35:08.0580000' (DbType = DateTime), @p56='2024-05-06 01:35:08.058 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[@p0='texte here' (Nullable = false) (Size = 4000), @p1='2024-05-06T04:35:07.9502521Z' (DbType = DateTime), @p2='titulo' (Nullable = false) (Size = 4000), @p3='0001-01-01T00:00:00.0000000' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Notes` (`Content`, `CreatedAt`, `Title`, `UpdatedAt`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Notes`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();' (Nullable = false) (Size = 4000), @p57='2024-05-06T01:35:08.1200000' (DbType = DateTime), @p58='2024-05-06 01:35:08.120 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/note/ - 201 null application/json; charset=utf-8 191.0926ms' (Nullable = false) (Size = 4000), @p59='2024-05-06T01:35:08.2130000' (DbType = DateTime), @p60='2024-05-06 01:35:08.213 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null' (Nullable = false) (Size = 4000), @p61='2024-05-06T01:35:08.2130000' (DbType = DateTime), @p62='2024-05-06 01:35:08.213 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'' (Nullable = false) (Size = 4000), @p63='2024-05-06T01:35:08.2270000' (DbType = DateTime), @p64='2024-05-06 01:35:08.227 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_1 OFFSET @__p_0' (Nullable = false) (Size = 4000), @p65='2024-05-06T01:35:08.2310000' (DbType = DateTime), @p66='2024-05-06 01:35:08.231 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 17.9421ms' (Nullable = false) (Size = 4000), @p67='2024-05-06T02:06:31.6830000' (DbType = DateTime), @p68='2024-05-06 02:06:31.683 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p69='2024-05-06T02:06:31.7930000' (DbType = DateTime), @p70='2024-05-06 02:06:31.793 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 110.4672ms' (Nullable = false) (Size = 4000), @p71='2024-05-06T02:06:31.8150000' (DbType = DateTime), @p72='2024-05-06 02:06:31.815 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p73='2024-05-06T02:06:31.8170000' (DbType = DateTime), @p74='2024-05-06 02:06:31.817 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 1.8876ms' (Nullable = false) (Size = 4000), @p75='2024-05-06T02:06:31.9550000' (DbType = DateTime), @p76='2024-05-06 02:06:31.955 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p77='2024-05-06T02:06:32.0460000' (DbType = DateTime), @p78='2024-05-06 02:06:32.046 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.6062ms' (Nullable = false) (Size = 4000), @p79='2024-05-06T02:06:41.5750000' (DbType = DateTime), @p80='2024-05-06 02:06:41.575 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/export/csv - null null' (Nullable = false) (Size = 4000), @p81='2024-05-06T02:06:41.5830000' (DbType = DateTime), @p82='2024-05-06 02:06:41.583 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.ExportarCsv (take-note)'' (Nullable = false) (Size = 4000), @p83='2024-05-06T02:06:41.8810000' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p2, @p3);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p4, @p5);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p6, @p7);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p8, @p9);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p10, @p11);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p12, @p13);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p14, @p15);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p16, @p17);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p18, @p19);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p20, @p21);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p22, @p23);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p24, @p25);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p26, @p27);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p28, @p29);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p30, @p31);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p32, @p33);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p34, @p35);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p36, @p37);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p38, @p39);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p40, @p41);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p42, @p43);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p44, @p45);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p46, @p47);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p48, @p49);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p50, @p51);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p52, @p53);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p54, @p55);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p56, @p57);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p58, @p59);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p60, @p61);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p62, @p63);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p64, @p65);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p66, @p67);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p68, @p69);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p70, @p71);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p72, @p73);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p74, @p75);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p76, @p77);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p78, @p79);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p80, @p81);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p82, @p83);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2024-05-05 23:37:35.751 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='2024-05-06 02:06:41.881 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/export/csv - 200 52461 text/csv 306.2648ms' (Nullable = false) (Size = 4000), @p1='2024-05-06T02:06:48.1150000' (DbType = DateTime), @p2='2024-05-06 02:06:48.115 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/export/xls - null null' (Nullable = false) (Size = 4000), @p3='2024-05-06T02:06:48.1170000' (DbType = DateTime), @p4='2024-05-06 02:06:48.117 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.ExportarXls (take-note)'' (Nullable = false) (Size = 4000), @p5='2024-05-06T02:06:49.0290000' (DbType = DateTime), @p6='2024-05-06 02:06:49.029 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `l`.`Id`, `l`.`Content`, `l`.`Date`
+FROM `LogEntrys` AS `l`' (Nullable = false) (Size = 4000), @p7='2024-05-06T02:06:49.7870000' (DbType = DateTime), @p8='2024-05-06 02:06:49.787 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/export/xls - 200 8806 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 1671.7827ms' (Nullable = false) (Size = 4000), @p9='2024-05-06T02:10:45.0720000' (DbType = DateTime), @p10='2024-05-06 02:10:45.072 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/export/prepare - null 0' (Nullable = false) (Size = 4000), @p11='2024-05-06T02:10:45.0740000' (DbType = DateTime), @p12='2024-05-06 02:10:45.074 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.PrepareLog (take-note)'' (Nullable = false) (Size = 4000), @p13='2024-05-06T02:10:45.1320000' (DbType = DateTime), @p14='2024-05-06 02:10:45.132 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/export/prepare - 200 0 null 59.7484ms' (Nullable = false) (Size = 4000), @p15='2024-05-06T02:14:02.4800000' (DbType = DateTime), @p16='2024-05-06 02:14:02.480 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p17='2024-05-06T02:14:02.4890000' (DbType = DateTime), @p18='2024-05-06 02:14:02.489 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 8.4777ms' (Nullable = false) (Size = 4000), @p19='2024-05-06T02:14:02.5330000' (DbType = DateTime), @p20='2024-05-06 02:14:02.533 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p21='2024-05-06T02:14:02.5340000' (DbType = DateTime), @p22='2024-05-06 02:14:02.534 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4955ms' (Nullable = false) (Size = 4000), @p23='2024-05-06T02:14:02.7600000' (DbType = DateTime), @p24='2024-05-06 02:14:02.760 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p25='2024-05-06T02:14:02.7710000' (DbType = DateTime), @p26='2024-05-06 02:14:02.771 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.2601ms' (Nullable = false) (Size = 4000), @p27='2024-05-06T02:14:08.0350000' (DbType = DateTime), @p28='2024-05-06 02:14:08.035 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/export/xls - null null' (Nullable = false) (Size = 4000), @p29='2024-05-06T02:14:08.0350000' (DbType = DateTime), @p30='2024-05-06 02:14:08.035 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.ExportarXls (take-note)'' (Nullable = false) (Size = 4000), @p31='2024-05-06T02:14:08.0740000' (DbType = DateTime), @p32='2024-05-06 02:14:08.074 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/export/xls - 500 null text/plain; charset=utf-8 38.9609ms' (Nullable = false) (Size = 4000), @p33='2024-05-06T02:14:18.5240000' (DbType = DateTime), @p34='2024-05-06 02:14:18.524 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/export/xls - null null' (Nullable = false) (Size = 4000), @p35='2024-05-06T02:14:18.5250000' (DbType = DateTime), @p36='2024-05-06 02:14:18.525 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.ExportarXls (take-note)'' (Nullable = false) (Size = 4000), @p37='2024-05-06T02:14:18.5370000' (DbType = DateTime), @p38='2024-05-06 02:14:18.537 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/export/xls - 500 null text/plain; charset=utf-8 12.954ms' (Nullable = false) (Size = 4000), @p39='2024-05-06T02:15:19.7920000' (DbType = DateTime), @p40='2024-05-06 02:15:19.792 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/export/prepare - null 0' (Nullable = false) (Size = 4000), @p41='2024-05-06T02:15:19.7920000' (DbType = DateTime), @p42='2024-05-06 02:15:19.792 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.PrepareLog (take-note)'' (Nullable = false) (Size = 4000), @p43='2024-05-06T02:15:19.8040000' (DbType = DateTime), @p44='2024-05-06 02:15:19.804 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/export/prepare - 500 null text/plain; charset=utf-8 12.6481ms' (Nullable = false) (Size = 4000), @p45='2024-05-05T23:28:24.5870000' (DbType = DateTime), @p46='2024-05-05 23:28:24.587 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p47='2024-05-05T23:28:24.5880000' (DbType = DateTime), @p48='2024-05-05 23:28:24.588 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 0.8226ms' (Nullable = false) (Size = 4000), @p49='2024-05-05T23:28:24.6250000' (DbType = DateTime), @p50='2024-05-05 23:28:24.625 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p51='2024-05-05T23:28:24.6260000' (DbType = DateTime), @p52='2024-05-05 23:28:24.626 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2738ms' (Nullable = false) (Size = 4000), @p53='2024-05-05T23:28:24.7550000' (DbType = DateTime), @p54='2024-05-05 23:28:24.755 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p55='2024-05-05T23:28:24.7590000' (DbType = DateTime), @p56='2024-05-05 23:28:24.759 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.0461ms' (Nullable = false) (Size = 4000), @p57='2024-05-05T23:28:53.9210000' (DbType = DateTime), @p58='2024-05-05 23:28:53.921 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p59='2024-05-05T23:28:53.9270000' (DbType = DateTime), @p60='2024-05-05 23:28:53.927 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 6.1137ms' (Nullable = false) (Size = 4000), @p61='2024-05-05T23:28:53.9490000' (DbType = DateTime), @p62='2024-05-05 23:28:53.949 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p63='2024-05-05T23:28:53.9490000' (DbType = DateTime), @p64='2024-05-05 23:28:53.949 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2736ms' (Nullable = false) (Size = 4000), @p65='2024-05-05T23:28:54.0310000' (DbType = DateTime), @p66='2024-05-05 23:28:54.031 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p67='2024-05-05T23:28:54.0370000' (DbType = DateTime), @p68='2024-05-05 23:28:54.037 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.8865ms' (Nullable = false) (Size = 4000), @p69='2024-05-05T23:29:01.6690000' (DbType = DateTime), @p70='2024-05-05 23:29:01.669 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p71='2024-05-05T23:29:01.6750000' (DbType = DateTime), @p72='2024-05-05 23:29:01.675 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 5.9205ms' (Nullable = false) (Size = 4000), @p73='2024-05-05T23:29:01.6910000' (DbType = DateTime), @p74='2024-05-05 23:29:01.691 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p75='2024-05-05T23:29:01.6920000' (DbType = DateTime), @p76='2024-05-05 23:29:01.692 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.277ms' (Nullable = false) (Size = 4000), @p77='2024-05-05T23:29:01.7570000' (DbType = DateTime), @p78='2024-05-05 23:29:01.757 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p79='2024-05-05T23:29:01.7630000' (DbType = DateTime), @p80='2024-05-05 23:29:01.763 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.7681ms' (Nullable = false) (Size = 4000), @p81='2024-05-05T23:29:07.5320000' (DbType = DateTime), @p82='2024-05-05 23:29:07.532 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p83='2024-05-05T23:29:07.5390000' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p2, @p3);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p4, @p5);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p6, @p7);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p8, @p9);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p10, @p11);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p12, @p13);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p14, @p15);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p16, @p17);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p18, @p19);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p20, @p21);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p22, @p23);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p24, @p25);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p26, @p27);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p28, @p29);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p30, @p31);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p32, @p33);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p34, @p35);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p36, @p37);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p38, @p39);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p40, @p41);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p42, @p43);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p44, @p45);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p46, @p47);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p48, @p49);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p50, @p51);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p52, @p53);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p54, @p55);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p56, @p57);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p58, @p59);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p60, @p61);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p62, @p63);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p64, @p65);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p66, @p67);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p68, @p69);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p70, @p71);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p72, @p73);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p74, @p75);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p76, @p77);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p78, @p79);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p80, @p81);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p82, @p83);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2024-05-05 23:37:35.764 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='2024-05-05 23:29:07.539 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 7.1671ms' (Nullable = false) (Size = 4000), @p1='2024-05-05T23:29:07.5570000' (DbType = DateTime), @p2='2024-05-05 23:29:07.557 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p3='2024-05-05T23:29:07.5570000' (DbType = DateTime), @p4='2024-05-05 23:29:07.557 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2065ms' (Nullable = false) (Size = 4000), @p5='2024-05-05T23:29:07.6230000' (DbType = DateTime), @p6='2024-05-05 23:29:07.623 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p7='2024-05-05T23:29:07.6270000' (DbType = DateTime), @p8='2024-05-05 23:29:07.627 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.4097ms' (Nullable = false) (Size = 4000), @p9='2024-05-05T23:29:21.9100000' (DbType = DateTime), @p10='2024-05-05 23:29:21.910 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p11='2024-05-05T23:29:21.9150000' (DbType = DateTime), @p12='2024-05-05 23:29:21.915 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 5.2486ms' (Nullable = false) (Size = 4000), @p13='2024-05-05T23:29:21.9330000' (DbType = DateTime), @p14='2024-05-05 23:29:21.933 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p15='2024-05-05T23:29:21.9340000' (DbType = DateTime), @p16='2024-05-05 23:29:21.934 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.208ms' (Nullable = false) (Size = 4000), @p17='2024-05-05T23:29:21.9960000' (DbType = DateTime), @p18='2024-05-05 23:29:21.996 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p19='2024-05-05T23:29:22.0000000' (DbType = DateTime), @p20='2024-05-05 23:29:22.000 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.6397ms' (Nullable = false) (Size = 4000), @p21='2024-05-05T23:29:30.3580000' (DbType = DateTime), @p22='2024-05-05 23:29:30.358 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p23='2024-05-05T23:29:30.3640000' (DbType = DateTime), @p24='2024-05-05 23:29:30.364 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 5.7017ms' (Nullable = false) (Size = 4000), @p25='2024-05-05T23:29:30.3840000' (DbType = DateTime), @p26='2024-05-05 23:29:30.384 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p27='2024-05-05T23:29:30.3840000' (DbType = DateTime), @p28='2024-05-05 23:29:30.384 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.274ms' (Nullable = false) (Size = 4000), @p29='2024-05-05T23:29:30.4450000' (DbType = DateTime), @p30='2024-05-05 23:29:30.445 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p31='2024-05-05T23:29:30.4490000' (DbType = DateTime), @p32='2024-05-05 23:29:30.449 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.1999ms' (Nullable = false) (Size = 4000), @p33='2024-05-05T23:29:51.2090000' (DbType = DateTime), @p34='2024-05-05 23:29:51.209 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p35='2024-05-05T23:29:51.2100000' (DbType = DateTime), @p36='2024-05-05 23:29:51.210 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 1.0467ms' (Nullable = false) (Size = 4000), @p37='2024-05-05T23:29:51.2320000' (DbType = DateTime), @p38='2024-05-05 23:29:51.232 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p39='2024-05-05T23:29:51.2320000' (DbType = DateTime), @p40='2024-05-05 23:29:51.232 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.248ms' (Nullable = false) (Size = 4000), @p41='2024-05-05T23:29:51.2920000' (DbType = DateTime), @p42='2024-05-05 23:29:51.292 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p43='2024-05-05T23:29:51.2940000' (DbType = DateTime), @p44='2024-05-05 23:29:51.294 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.9072ms' (Nullable = false) (Size = 4000), @p45='2024-05-05T23:29:56.8550000' (DbType = DateTime), @p46='2024-05-05 23:29:56.855 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note?pageNumber=1&pageSize=10 - null null' (Nullable = false) (Size = 4000), @p47='2024-05-05T23:29:56.8550000' (DbType = DateTime), @p48='2024-05-05 23:29:56.855 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'' (Nullable = false) (Size = 4000), @p49='2024-05-05T23:29:57.1320000' (DbType = DateTime), @p50='2024-05-05 23:29:57.132 -03:00 [INF] Executed DbCommand (25ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_1 OFFSET @__p_0' (Nullable = false) (Size = 4000), @p51='2024-05-05T23:29:57.1620000' (DbType = DateTime), @p52='2024-05-05 23:29:57.162 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 307.3263ms' (Nullable = false) (Size = 4000), @p53='2024-05-05T23:30:11.4650000' (DbType = DateTime), @p54='2024-05-05 23:30:11.465 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/export/prepare - null 0' (Nullable = false) (Size = 4000), @p55='2024-05-05T23:30:11.4660000' (DbType = DateTime), @p56='2024-05-05 23:30:11.466 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.PrepareLog (take-note)'' (Nullable = false) (Size = 4000), @p57='2024-05-05T23:30:11.4810000' (DbType = DateTime), @p58='2024-05-05 23:30:11.481 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/export/prepare - 500 null text/plain; charset=utf-8 16.0747ms' (Nullable = false) (Size = 4000), @p59='2024-05-05T23:30:42.7450000' (DbType = DateTime), @p60='2024-05-05 23:30:42.745 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/export/prepare - null 0' (Nullable = false) (Size = 4000), @p61='2024-05-05T23:30:42.7460000' (DbType = DateTime), @p62='2024-05-05 23:30:42.746 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.PrepareLog (take-note)'' (Nullable = false) (Size = 4000), @p63='2024-05-05T23:30:42.7580000' (DbType = DateTime), @p64='2024-05-05 23:30:42.758 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/export/prepare - 500 null text/plain; charset=utf-8 12.5237ms' (Nullable = false) (Size = 4000), @p65='2024-05-06T02:37:35.6731707Z' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p2, @p3);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p4, @p5);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p6, @p7);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p8, @p9);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p10, @p11);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p12, @p13);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p14, @p15);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p16, @p17);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p18, @p19);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p20, @p21);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p22, @p23);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p24, @p25);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p26, @p27);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p28, @p29);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p30, @p31);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p32, @p33);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p34, @p35);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p36, @p37);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p38, @p39);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p40, @p41);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p42, @p43);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p44, @p45);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p46, @p47);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p48, @p49);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p50, @p51);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p52, @p53);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p54, @p55);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p56, @p57);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p58, @p59);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p60, @p61);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p62, @p63);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p64, @p65);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2024-05-05 23:37:35.945 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `l`.`Id`, `l`.`Content`, `l`.`Date`
+FROM `LogEntrys` AS `l`
+2024-05-05 23:37:36.667 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/export/xls - 200 13891 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 1352.8189ms
+2024-05-05 23:44:42.106 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/export/xls - null null
+2024-05-05 23:44:42.168 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.ExportarXls (take-note)'
+2024-05-05 23:44:42.989 -03:00 [INF] Executed DbCommand (33ms) [Parameters=[@p0='2024-05-06 01:16:04.078 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p1='2024-05-06T01:16:04.0880000' (DbType = DateTime), @p2='2024-05-06 01:16:04.088 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 11.3799ms' (Nullable = false) (Size = 4000), @p3='2024-05-06T01:16:04.1430000' (DbType = DateTime), @p4='2024-05-06 01:16:04.143 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p5='2024-05-06T01:16:04.1430000' (DbType = DateTime), @p6='2024-05-06 01:16:04.143 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.5914ms' (Nullable = false) (Size = 4000), @p7='2024-05-06T01:16:04.3740000' (DbType = DateTime), @p8='2024-05-06 01:16:04.374 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p9='2024-05-06T01:16:04.3850000' (DbType = DateTime), @p10='2024-05-06 01:16:04.385 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.8982ms' (Nullable = false) (Size = 4000), @p11='2024-05-06T01:21:15.8310000' (DbType = DateTime), @p12='2024-05-06 01:21:15.831 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p13='2024-05-06T01:21:15.9630000' (DbType = DateTime), @p14='2024-05-06 01:21:15.963 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 132.5851ms' (Nullable = false) (Size = 4000), @p15='2024-05-06T01:21:15.9950000' (DbType = DateTime), @p16='2024-05-06 01:21:15.995 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p17='2024-05-06T01:21:15.9980000' (DbType = DateTime), @p18='2024-05-06 01:21:15.998 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 2.8836ms' (Nullable = false) (Size = 4000), @p19='2024-05-06T01:21:16.2170000' (DbType = DateTime), @p20='2024-05-06 01:21:16.217 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p21='2024-05-06T01:21:16.3320000' (DbType = DateTime), @p22='2024-05-06 01:21:16.332 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 114.831ms' (Nullable = false) (Size = 4000), @p23='2024-05-06T01:21:55.9020000' (DbType = DateTime), @p24='2024-05-06 01:21:55.902 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note?pageNumber=2&pageSize=3 - null null' (Nullable = false) (Size = 4000), @p25='2024-05-06T01:21:55.9090000' (DbType = DateTime), @p26='2024-05-06 01:21:55.909 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'' (Nullable = false) (Size = 4000), @p27='2024-05-06T01:21:57.1460000' (DbType = DateTime), @p28='2024-05-06 01:21:57.146 -03:00 [INF] Executed DbCommand (41ms) [Parameters=[@__p_0='3'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_0 OFFSET @__p_0' (Nullable = false) (Size = 4000), @p29='2024-05-06T01:21:57.2290000' (DbType = DateTime), @p30='2024-05-06 01:21:57.229 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note?pageNumber=2&pageSize=3 - 200 null application/json; charset=utf-8 1326.6842ms' (Nullable = false) (Size = 4000), @p31='2024-05-06T01:34:41.1620000' (DbType = DateTime), @p32='2024-05-06 01:34:41.162 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null' (Nullable = false) (Size = 4000), @p33='2024-05-06T01:34:41.1640000' (DbType = DateTime), @p34='2024-05-06 01:34:41.164 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'' (Nullable = false) (Size = 4000), @p35='2024-05-06T01:34:41.2180000' (DbType = DateTime), @p36='2024-05-06 01:34:41.218 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_1 OFFSET @__p_0' (Nullable = false) (Size = 4000), @p37='2024-05-06T01:34:41.2230000' (DbType = DateTime), @p38='2024-05-06 01:34:41.223 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 60.7786ms' (Nullable = false) (Size = 4000), @p39='2024-05-06T01:34:58.8730000' (DbType = DateTime), @p40='2024-05-06 01:34:58.873 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null' (Nullable = false) (Size = 4000), @p41='2024-05-06T01:34:58.8730000' (DbType = DateTime), @p42='2024-05-06 01:34:58.873 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'' (Nullable = false) (Size = 4000), @p43='2024-05-06T01:34:58.9470000' (DbType = DateTime), @p44='2024-05-06 01:34:58.947 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_1 OFFSET @__p_0' (Nullable = false) (Size = 4000), @p45='2024-05-06T01:34:58.9500000' (DbType = DateTime), @p46='2024-05-06 01:34:58.950 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 76.7415ms' (Nullable = false) (Size = 4000), @p47='2024-05-06T01:35:07.9260000' (DbType = DateTime), @p48='2024-05-06 01:35:07.926 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5036/v1/note/ - null null' (Nullable = false) (Size = 4000), @p49='2024-05-06T01:35:07.9270000' (DbType = DateTime), @p50='2024-05-06 01:35:07.927 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5036/v1/note/ - 204 null null 0.8898ms' (Nullable = false) (Size = 4000), @p51='2024-05-06T01:35:07.9290000' (DbType = DateTime), @p52='2024-05-06 01:35:07.929 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/note/ - application/json 41' (Nullable = false) (Size = 4000), @p53='2024-05-06T01:35:07.9290000' (DbType = DateTime), @p54='2024-05-06 01:35:07.929 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.CreateNote (take-note)'' (Nullable = false) (Size = 4000), @p55='2024-05-06T01:35:08.0580000' (DbType = DateTime), @p56='2024-05-06 01:35:08.058 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[@p0='texte here' (Nullable = false) (Size = 4000), @p1='2024-05-06T04:35:07.9502521Z' (DbType = DateTime), @p2='titulo' (Nullable = false) (Size = 4000), @p3='0001-01-01T00:00:00.0000000' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Notes` (`Content`, `CreatedAt`, `Title`, `UpdatedAt`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Notes`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();' (Nullable = false) (Size = 4000), @p57='2024-05-06T01:35:08.1200000' (DbType = DateTime), @p58='2024-05-06 01:35:08.120 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/note/ - 201 null application/json; charset=utf-8 191.0926ms' (Nullable = false) (Size = 4000), @p59='2024-05-06T01:35:08.2130000' (DbType = DateTime), @p60='2024-05-06 01:35:08.213 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null' (Nullable = false) (Size = 4000), @p61='2024-05-06T01:35:08.2130000' (DbType = DateTime), @p62='2024-05-06 01:35:08.213 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'' (Nullable = false) (Size = 4000), @p63='2024-05-06T01:35:08.2270000' (DbType = DateTime), @p64='2024-05-06 01:35:08.227 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_1 OFFSET @__p_0' (Nullable = false) (Size = 4000), @p65='2024-05-06T01:35:08.2310000' (DbType = DateTime), @p66='2024-05-06 01:35:08.231 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 17.9421ms' (Nullable = false) (Size = 4000), @p67='2024-05-06T02:06:31.6830000' (DbType = DateTime), @p68='2024-05-06 02:06:31.683 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p69='2024-05-06T02:06:31.7930000' (DbType = DateTime), @p70='2024-05-06 02:06:31.793 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 110.4672ms' (Nullable = false) (Size = 4000), @p71='2024-05-06T02:06:31.8150000' (DbType = DateTime), @p72='2024-05-06 02:06:31.815 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p73='2024-05-06T02:06:31.8170000' (DbType = DateTime), @p74='2024-05-06 02:06:31.817 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 1.8876ms' (Nullable = false) (Size = 4000), @p75='2024-05-06T02:06:31.9550000' (DbType = DateTime), @p76='2024-05-06 02:06:31.955 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p77='2024-05-06T02:06:32.0460000' (DbType = DateTime), @p78='2024-05-06 02:06:32.046 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.6062ms' (Nullable = false) (Size = 4000), @p79='2024-05-06T02:06:41.5750000' (DbType = DateTime), @p80='2024-05-06 02:06:41.575 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/export/csv - null null' (Nullable = false) (Size = 4000), @p81='2024-05-06T02:06:41.5830000' (DbType = DateTime), @p82='2024-05-06 02:06:41.583 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.ExportarCsv (take-note)'' (Nullable = false) (Size = 4000), @p83='2024-05-06T02:06:41.8810000' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p2, @p3);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p4, @p5);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p6, @p7);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p8, @p9);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p10, @p11);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p12, @p13);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p14, @p15);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p16, @p17);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p18, @p19);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p20, @p21);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p22, @p23);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p24, @p25);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p26, @p27);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p28, @p29);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p30, @p31);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p32, @p33);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p34, @p35);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p36, @p37);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p38, @p39);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p40, @p41);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p42, @p43);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p44, @p45);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p46, @p47);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p48, @p49);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p50, @p51);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p52, @p53);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p54, @p55);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p56, @p57);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p58, @p59);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p60, @p61);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p62, @p63);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p64, @p65);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p66, @p67);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p68, @p69);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p70, @p71);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p72, @p73);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p74, @p75);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p76, @p77);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p78, @p79);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p80, @p81);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p82, @p83);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2024-05-05 23:44:43.024 -03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='2024-05-06 02:06:41.881 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/export/csv - 200 52461 text/csv 306.2648ms' (Nullable = false) (Size = 4000), @p1='2024-05-06T02:06:48.1150000' (DbType = DateTime), @p2='2024-05-06 02:06:48.115 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/export/xls - null null' (Nullable = false) (Size = 4000), @p3='2024-05-06T02:06:48.1170000' (DbType = DateTime), @p4='2024-05-06 02:06:48.117 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.ExportarXls (take-note)'' (Nullable = false) (Size = 4000), @p5='2024-05-06T02:06:49.0290000' (DbType = DateTime), @p6='2024-05-06 02:06:49.029 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `l`.`Id`, `l`.`Content`, `l`.`Date`
+FROM `LogEntrys` AS `l`' (Nullable = false) (Size = 4000), @p7='2024-05-06T02:06:49.7870000' (DbType = DateTime), @p8='2024-05-06 02:06:49.787 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/export/xls - 200 8806 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 1671.7827ms' (Nullable = false) (Size = 4000), @p9='2024-05-06T02:10:45.0720000' (DbType = DateTime), @p10='2024-05-06 02:10:45.072 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/export/prepare - null 0' (Nullable = false) (Size = 4000), @p11='2024-05-06T02:10:45.0740000' (DbType = DateTime), @p12='2024-05-06 02:10:45.074 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.PrepareLog (take-note)'' (Nullable = false) (Size = 4000), @p13='2024-05-06T02:10:45.1320000' (DbType = DateTime), @p14='2024-05-06 02:10:45.132 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/export/prepare - 200 0 null 59.7484ms' (Nullable = false) (Size = 4000), @p15='2024-05-06T02:14:02.4800000' (DbType = DateTime), @p16='2024-05-06 02:14:02.480 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p17='2024-05-06T02:14:02.4890000' (DbType = DateTime), @p18='2024-05-06 02:14:02.489 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 8.4777ms' (Nullable = false) (Size = 4000), @p19='2024-05-06T02:14:02.5330000' (DbType = DateTime), @p20='2024-05-06 02:14:02.533 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p21='2024-05-06T02:14:02.5340000' (DbType = DateTime), @p22='2024-05-06 02:14:02.534 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4955ms' (Nullable = false) (Size = 4000), @p23='2024-05-06T02:14:02.7600000' (DbType = DateTime), @p24='2024-05-06 02:14:02.760 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p25='2024-05-06T02:14:02.7710000' (DbType = DateTime), @p26='2024-05-06 02:14:02.771 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.2601ms' (Nullable = false) (Size = 4000), @p27='2024-05-06T02:14:08.0350000' (DbType = DateTime), @p28='2024-05-06 02:14:08.035 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/export/xls - null null' (Nullable = false) (Size = 4000), @p29='2024-05-06T02:14:08.0350000' (DbType = DateTime), @p30='2024-05-06 02:14:08.035 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.ExportarXls (take-note)'' (Nullable = false) (Size = 4000), @p31='2024-05-06T02:14:08.0740000' (DbType = DateTime), @p32='2024-05-06 02:14:08.074 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/export/xls - 500 null text/plain; charset=utf-8 38.9609ms' (Nullable = false) (Size = 4000), @p33='2024-05-06T02:14:18.5240000' (DbType = DateTime), @p34='2024-05-06 02:14:18.524 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/export/xls - null null' (Nullable = false) (Size = 4000), @p35='2024-05-06T02:14:18.5250000' (DbType = DateTime), @p36='2024-05-06 02:14:18.525 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.ExportarXls (take-note)'' (Nullable = false) (Size = 4000), @p37='2024-05-06T02:14:18.5370000' (DbType = DateTime), @p38='2024-05-06 02:14:18.537 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/export/xls - 500 null text/plain; charset=utf-8 12.954ms' (Nullable = false) (Size = 4000), @p39='2024-05-06T02:15:19.7920000' (DbType = DateTime), @p40='2024-05-06 02:15:19.792 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/export/prepare - null 0' (Nullable = false) (Size = 4000), @p41='2024-05-06T02:15:19.7920000' (DbType = DateTime), @p42='2024-05-06 02:15:19.792 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.PrepareLog (take-note)'' (Nullable = false) (Size = 4000), @p43='2024-05-06T02:15:19.8040000' (DbType = DateTime), @p44='2024-05-06 02:15:19.804 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/export/prepare - 500 null text/plain; charset=utf-8 12.6481ms' (Nullable = false) (Size = 4000), @p45='2024-05-05T23:28:24.5870000' (DbType = DateTime), @p46='2024-05-05 23:28:24.587 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p47='2024-05-05T23:28:24.5880000' (DbType = DateTime), @p48='2024-05-05 23:28:24.588 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 0.8226ms' (Nullable = false) (Size = 4000), @p49='2024-05-05T23:28:24.6250000' (DbType = DateTime), @p50='2024-05-05 23:28:24.625 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p51='2024-05-05T23:28:24.6260000' (DbType = DateTime), @p52='2024-05-05 23:28:24.626 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2738ms' (Nullable = false) (Size = 4000), @p53='2024-05-05T23:28:24.7550000' (DbType = DateTime), @p54='2024-05-05 23:28:24.755 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p55='2024-05-05T23:28:24.7590000' (DbType = DateTime), @p56='2024-05-05 23:28:24.759 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.0461ms' (Nullable = false) (Size = 4000), @p57='2024-05-05T23:28:53.9210000' (DbType = DateTime), @p58='2024-05-05 23:28:53.921 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p59='2024-05-05T23:28:53.9270000' (DbType = DateTime), @p60='2024-05-05 23:28:53.927 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 6.1137ms' (Nullable = false) (Size = 4000), @p61='2024-05-05T23:28:53.9490000' (DbType = DateTime), @p62='2024-05-05 23:28:53.949 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p63='2024-05-05T23:28:53.9490000' (DbType = DateTime), @p64='2024-05-05 23:28:53.949 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2736ms' (Nullable = false) (Size = 4000), @p65='2024-05-05T23:28:54.0310000' (DbType = DateTime), @p66='2024-05-05 23:28:54.031 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p67='2024-05-05T23:28:54.0370000' (DbType = DateTime), @p68='2024-05-05 23:28:54.037 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.8865ms' (Nullable = false) (Size = 4000), @p69='2024-05-05T23:29:01.6690000' (DbType = DateTime), @p70='2024-05-05 23:29:01.669 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p71='2024-05-05T23:29:01.6750000' (DbType = DateTime), @p72='2024-05-05 23:29:01.675 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 5.9205ms' (Nullable = false) (Size = 4000), @p73='2024-05-05T23:29:01.6910000' (DbType = DateTime), @p74='2024-05-05 23:29:01.691 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p75='2024-05-05T23:29:01.6920000' (DbType = DateTime), @p76='2024-05-05 23:29:01.692 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.277ms' (Nullable = false) (Size = 4000), @p77='2024-05-05T23:29:01.7570000' (DbType = DateTime), @p78='2024-05-05 23:29:01.757 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p79='2024-05-05T23:29:01.7630000' (DbType = DateTime), @p80='2024-05-05 23:29:01.763 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.7681ms' (Nullable = false) (Size = 4000), @p81='2024-05-05T23:29:07.5320000' (DbType = DateTime), @p82='2024-05-05 23:29:07.532 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p83='2024-05-05T23:29:07.5390000' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p2, @p3);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p4, @p5);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p6, @p7);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p8, @p9);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p10, @p11);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p12, @p13);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p14, @p15);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p16, @p17);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p18, @p19);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p20, @p21);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p22, @p23);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p24, @p25);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p26, @p27);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p28, @p29);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p30, @p31);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p32, @p33);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p34, @p35);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p36, @p37);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p38, @p39);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p40, @p41);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p42, @p43);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p44, @p45);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p46, @p47);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p48, @p49);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p50, @p51);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p52, @p53);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p54, @p55);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p56, @p57);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p58, @p59);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p60, @p61);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p62, @p63);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p64, @p65);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p66, @p67);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p68, @p69);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p70, @p71);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p72, @p73);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p74, @p75);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p76, @p77);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p78, @p79);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p80, @p81);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p82, @p83);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2024-05-05 23:44:43.053 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='2024-05-05 23:29:07.539 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 7.1671ms' (Nullable = false) (Size = 4000), @p1='2024-05-05T23:29:07.5570000' (DbType = DateTime), @p2='2024-05-05 23:29:07.557 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p3='2024-05-05T23:29:07.5570000' (DbType = DateTime), @p4='2024-05-05 23:29:07.557 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.2065ms' (Nullable = false) (Size = 4000), @p5='2024-05-05T23:29:07.6230000' (DbType = DateTime), @p6='2024-05-05 23:29:07.623 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p7='2024-05-05T23:29:07.6270000' (DbType = DateTime), @p8='2024-05-05 23:29:07.627 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.4097ms' (Nullable = false) (Size = 4000), @p9='2024-05-05T23:29:21.9100000' (DbType = DateTime), @p10='2024-05-05 23:29:21.910 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p11='2024-05-05T23:29:21.9150000' (DbType = DateTime), @p12='2024-05-05 23:29:21.915 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 5.2486ms' (Nullable = false) (Size = 4000), @p13='2024-05-05T23:29:21.9330000' (DbType = DateTime), @p14='2024-05-05 23:29:21.933 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p15='2024-05-05T23:29:21.9340000' (DbType = DateTime), @p16='2024-05-05 23:29:21.934 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.208ms' (Nullable = false) (Size = 4000), @p17='2024-05-05T23:29:21.9960000' (DbType = DateTime), @p18='2024-05-05 23:29:21.996 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p19='2024-05-05T23:29:22.0000000' (DbType = DateTime), @p20='2024-05-05 23:29:22.000 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.6397ms' (Nullable = false) (Size = 4000), @p21='2024-05-05T23:29:30.3580000' (DbType = DateTime), @p22='2024-05-05 23:29:30.358 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p23='2024-05-05T23:29:30.3640000' (DbType = DateTime), @p24='2024-05-05 23:29:30.364 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 5.7017ms' (Nullable = false) (Size = 4000), @p25='2024-05-05T23:29:30.3840000' (DbType = DateTime), @p26='2024-05-05 23:29:30.384 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p27='2024-05-05T23:29:30.3840000' (DbType = DateTime), @p28='2024-05-05 23:29:30.384 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.274ms' (Nullable = false) (Size = 4000), @p29='2024-05-05T23:29:30.4450000' (DbType = DateTime), @p30='2024-05-05 23:29:30.445 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p31='2024-05-05T23:29:30.4490000' (DbType = DateTime), @p32='2024-05-05 23:29:30.449 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.1999ms' (Nullable = false) (Size = 4000), @p33='2024-05-05T23:29:51.2090000' (DbType = DateTime), @p34='2024-05-05 23:29:51.209 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null' (Nullable = false) (Size = 4000), @p35='2024-05-05T23:29:51.2100000' (DbType = DateTime), @p36='2024-05-05 23:29:51.210 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 1.0467ms' (Nullable = false) (Size = 4000), @p37='2024-05-05T23:29:51.2320000' (DbType = DateTime), @p38='2024-05-05 23:29:51.232 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null' (Nullable = false) (Size = 4000), @p39='2024-05-05T23:29:51.2320000' (DbType = DateTime), @p40='2024-05-05 23:29:51.232 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.248ms' (Nullable = false) (Size = 4000), @p41='2024-05-05T23:29:51.2920000' (DbType = DateTime), @p42='2024-05-05 23:29:51.292 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null' (Nullable = false) (Size = 4000), @p43='2024-05-05T23:29:51.2940000' (DbType = DateTime), @p44='2024-05-05 23:29:51.294 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.9072ms' (Nullable = false) (Size = 4000), @p45='2024-05-05T23:29:56.8550000' (DbType = DateTime), @p46='2024-05-05 23:29:56.855 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note?pageNumber=1&pageSize=10 - null null' (Nullable = false) (Size = 4000), @p47='2024-05-05T23:29:56.8550000' (DbType = DateTime), @p48='2024-05-05 23:29:56.855 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'' (Nullable = false) (Size = 4000), @p49='2024-05-05T23:29:57.1320000' (DbType = DateTime), @p50='2024-05-05 23:29:57.132 -03:00 [INF] Executed DbCommand (25ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_1 OFFSET @__p_0' (Nullable = false) (Size = 4000), @p51='2024-05-05T23:29:57.1620000' (DbType = DateTime), @p52='2024-05-05 23:29:57.162 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 307.3263ms' (Nullable = false) (Size = 4000), @p53='2024-05-05T23:30:11.4650000' (DbType = DateTime), @p54='2024-05-05 23:30:11.465 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/export/prepare - null 0' (Nullable = false) (Size = 4000), @p55='2024-05-05T23:30:11.4660000' (DbType = DateTime), @p56='2024-05-05 23:30:11.466 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.PrepareLog (take-note)'' (Nullable = false) (Size = 4000), @p57='2024-05-05T23:30:11.4810000' (DbType = DateTime), @p58='2024-05-05 23:30:11.481 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/export/prepare - 500 null text/plain; charset=utf-8 16.0747ms' (Nullable = false) (Size = 4000), @p59='2024-05-05T23:30:42.7450000' (DbType = DateTime), @p60='2024-05-05 23:30:42.745 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/export/prepare - null 0' (Nullable = false) (Size = 4000), @p61='2024-05-05T23:30:42.7460000' (DbType = DateTime), @p62='2024-05-05 23:30:42.746 -03:00 [INF] Executing endpoint 'take_note.Domain.ExportController.PrepareLog (take-note)'' (Nullable = false) (Size = 4000), @p63='2024-05-05T23:30:42.7580000' (DbType = DateTime), @p64='2024-05-05 23:30:42.758 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/export/prepare - 500 null text/plain; charset=utf-8 12.5237ms' (Nullable = false) (Size = 4000), @p65='2024-05-06T02:44:42.4285712Z' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p0, @p1);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p2, @p3);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p4, @p5);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p6, @p7);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p8, @p9);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p10, @p11);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p12, @p13);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p14, @p15);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p16, @p17);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p18, @p19);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p20, @p21);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p22, @p23);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p24, @p25);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p26, @p27);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p28, @p29);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p30, @p31);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p32, @p33);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p34, @p35);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p36, @p37);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p38, @p39);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p40, @p41);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p42, @p43);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p44, @p45);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p46, @p47);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p48, @p49);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p50, @p51);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p52, @p53);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p54, @p55);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p56, @p57);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p58, @p59);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p60, @p61);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p62, @p63);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+
+INSERT INTO `LogEntrys` (`Content`, `Date`)
+VALUES (@p64, @p65);
+SELECT `Id`
+FROM `LogEntrys`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2024-05-05 23:44:43.229 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `l`.`Id`, `l`.`Content`, `l`.`Date`
+FROM `LogEntrys` AS `l`
+2024-05-05 23:44:43.821 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/export/xls - 200 15307 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 1716.5594ms
+2024-05-05 23:50:03.732 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null
+2024-05-05 23:50:03.844 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 112.8768ms
+2024-05-05 23:50:03.886 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-05 23:50:03.888 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 1.863ms
+2024-05-05 23:50:04.032 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null
+2024-05-05 23:50:04.126 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 94.0861ms
+2024-05-05 23:50:28.273 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null
+2024-05-05 23:50:28.281 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 7.6443ms
+2024-05-05 23:50:28.301 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-05 23:50:28.302 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.4943ms
+2024-05-05 23:50:28.365 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null
+2024-05-05 23:50:28.374 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.4659ms
+2024-05-05 23:59:34.093 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note?pageNumber=1&pageSize=10 - null null
+2024-05-05 23:59:34.099 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 23:59:35.181 -03:00 [INF] Executed DbCommand (66ms) [Parameters=[@__p_1='10', @__p_0='0'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+LIMIT @__p_1 OFFSET @__p_0
+2024-05-05 23:59:35.274 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note?pageNumber=1&pageSize=10 - 200 null application/json; charset=utf-8 1181.0411ms

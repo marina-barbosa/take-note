@@ -36,6 +36,8 @@ builder.Services.AddDbContext<MySqlDbContext>(options =>
 //    .LogTo(Console.WriteLine, LogLevel.Debug);
 // });
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 builder.Services.AddScoped<INoteService, NoteService>();
 builder.Services.AddScoped<ITrackService, TrackService>();
 
