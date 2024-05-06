@@ -1,0 +1,514 @@
+2024-05-05 21:11:56.021 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:11:56.107 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:11:57.339 -03:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:11:57.486 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 1466.5401ms
+2024-05-05 21:12:10.996 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5036/v1/note/1 - null null
+2024-05-05 21:12:10.998 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5036/v1/note/1 - 204 null null 2.0341ms
+2024-05-05 21:12:11.002 -03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5036/v1/note/1 - null null
+2024-05-05 21:12:11.004 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.DeleteNote (take-note)'
+2024-05-05 21:12:11.168 -03:00 [INF] Executed DbCommand (27ms) [Parameters=[@__p_0='1'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+WHERE `n`.`Id` = @__p_0
+LIMIT 1
+2024-05-05 21:12:11.266 -03:00 [INF] Executed DbCommand (28ms) [Parameters=[@p0='1'], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+DELETE FROM `Notes`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+2024-05-05 21:12:11.281 -03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5036/v1/note/1 - 204 null null 278.5956ms
+2024-05-05 21:12:11.285 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:12:11.286 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:12:11.347 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:12:11.351 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 65.9906ms
+2024-05-05 21:12:17.126 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5036/v1/note/4 - null null
+2024-05-05 21:12:17.126 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5036/v1/note/4 - 204 null null 0.5456ms
+2024-05-05 21:12:17.128 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5036/v1/note/4 - application/json 161
+2024-05-05 21:12:17.129 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.UpdateNote (take-note)'
+2024-05-05 21:12:17.186 -03:00 [INF] Executed DbCommand (19ms) [Parameters=[@p4='4', @p0='redragon shaco, magic-wand, dukharo 66%' (Nullable = false) (Size = 4000), @p1='2024-04-28T19:45:33.9060710' (DbType = DateTime), @p2='teclados' (Nullable = false) (Size = 4000), @p3='2024-05-06T00:12:17.1574579Z' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Notes` SET `Content` = @p0, `CreatedAt` = @p1, `Title` = @p2, `UpdatedAt` = @p3
+WHERE `Id` = @p4;
+SELECT ROW_COUNT();
+2024-05-05 21:12:17.190 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5036/v1/note/4 - 204 null null 61.1314ms
+2024-05-05 21:12:17.194 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:12:17.195 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:12:17.205 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:12:17.208 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 13.9383ms
+2024-05-05 21:12:21.786 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5036/v1/note/11 - null null
+2024-05-05 21:12:21.787 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5036/v1/note/11 - 204 null null 0.5903ms
+2024-05-05 21:12:21.789 -03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5036/v1/note/11 - null null
+2024-05-05 21:12:21.789 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.DeleteNote (take-note)'
+2024-05-05 21:12:21.801 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='11'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+WHERE `n`.`Id` = @__p_0
+LIMIT 1
+2024-05-05 21:12:21.819 -03:00 [INF] Executed DbCommand (16ms) [Parameters=[@p0='11'], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+DELETE FROM `Notes`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+2024-05-05 21:12:21.820 -03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5036/v1/note/11 - 204 null null 30.8898ms
+2024-05-05 21:12:21.824 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:12:21.824 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:12:21.833 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:12:21.843 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 19.3062ms
+2024-05-05 21:12:41.310 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5036/v1/note/12 - null null
+2024-05-05 21:12:41.310 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5036/v1/note/12 - 204 null null 0.3363ms
+2024-05-05 21:12:41.312 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5036/v1/note/12 - application/json 161
+2024-05-05 21:12:41.312 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.UpdateNote (take-note)'
+2024-05-05 21:12:41.336 -03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p4='12', @p0='testando updateeeeeee' (Nullable = false) (Size = 4000), @p1='2024-04-28T22:39:14.6470000' (DbType = DateTime), @p2='um titulo para testar update' (Nullable = false) (Size = 4000), @p3='2024-05-06T00:12:41.3218803Z' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Notes` SET `Content` = @p0, `CreatedAt` = @p1, `Title` = @p2, `UpdatedAt` = @p3
+WHERE `Id` = @p4;
+SELECT ROW_COUNT();
+2024-05-05 21:12:41.338 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5036/v1/note/12 - 204 null null 25.5161ms
+2024-05-05 21:12:41.342 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:12:41.342 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:12:41.352 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:12:41.354 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 11.8993ms
+2024-05-05 21:12:46.469 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5036/v1/note/14 - null null
+2024-05-05 21:12:46.470 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5036/v1/note/14 - 204 null null 0.4543ms
+2024-05-05 21:12:46.472 -03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5036/v1/note/14 - null null
+2024-05-05 21:12:46.472 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.DeleteNote (take-note)'
+2024-05-05 21:12:46.483 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='14'], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+WHERE `n`.`Id` = @__p_0
+LIMIT 1
+2024-05-05 21:12:46.495 -03:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='14'], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+DELETE FROM `Notes`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+2024-05-05 21:12:46.496 -03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5036/v1/note/14 - 204 null null 24.6925ms
+2024-05-05 21:12:46.500 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:12:46.501 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:12:46.509 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:12:46.511 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 10.1946ms
+2024-05-05 21:13:09.263 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5036/v1/note/15 - null null
+2024-05-05 21:13:09.264 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5036/v1/note/15 - 204 null null 0.4115ms
+2024-05-05 21:13:09.266 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5036/v1/note/15 - application/json 161
+2024-05-05 21:13:09.266 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.UpdateNote (take-note)'
+2024-05-05 21:13:09.291 -03:00 [INF] Executed DbCommand (14ms) [Parameters=[@p4='15', @p0='213
+456
+876
+32
+4257
+43
+826
+4
+567
+43' (Nullable = false) (Size = 4000), @p1='2024-04-28T22:38:10.5886990' (DbType = DateTime), @p2='teste' (Nullable = false) (Size = 4000), @p3='2024-05-06T00:13:09.2755297Z' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Notes` SET `Content` = @p0, `CreatedAt` = @p1, `Title` = @p2, `UpdatedAt` = @p3
+WHERE `Id` = @p4;
+SELECT ROW_COUNT();
+2024-05-05 21:13:09.292 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5036/v1/note/15 - 204 null null 25.9693ms
+2024-05-05 21:13:09.296 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:13:09.297 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:13:09.306 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:13:09.308 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 12.0611ms
+2024-05-05 21:13:12.192 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5036/v1/note/ - null null
+2024-05-05 21:13:12.192 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5036/v1/note/ - 204 null null 0.3629ms
+2024-05-05 21:13:12.194 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/note/ - application/json 41
+2024-05-05 21:13:12.194 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.CreateNote (take-note)'
+2024-05-05 21:13:12.241 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='texte here' (Nullable = false) (Size = 4000), @p1='2024-05-06T00:13:12.2063115Z' (DbType = DateTime), @p2='titulo' (Nullable = false) (Size = 4000), @p3='0001-01-01T00:00:00.0000000' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Notes` (`Content`, `CreatedAt`, `Title`, `UpdatedAt`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Notes`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2024-05-05 21:13:12.291 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/note/ - 201 null application/json; charset=utf-8 97.1077ms
+2024-05-05 21:13:12.391 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:13:12.392 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:13:12.404 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:13:12.407 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 15.8839ms
+2024-05-05 21:13:13.503 -03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5036/v1/note/ - application/json 41
+2024-05-05 21:13:13.503 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.CreateNote (take-note)'
+2024-05-05 21:13:13.515 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='texte here' (Nullable = false) (Size = 4000), @p1='2024-05-06T00:13:13.5113468Z' (DbType = DateTime), @p2='titulo' (Nullable = false) (Size = 4000), @p3='0001-01-01T00:00:00.0000000' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Notes` (`Content`, `CreatedAt`, `Title`, `UpdatedAt`)
+VALUES (@p0, @p1, @p2, @p3);
+SELECT `Id`
+FROM `Notes`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2024-05-05 21:13:13.529 -03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5036/v1/note/ - 201 null application/json; charset=utf-8 26.8275ms
+2024-05-05 21:13:13.635 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:13:13.636 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:13:13.647 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:13:13.651 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 15.505ms
+2024-05-05 21:16:28.439 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5036/v1/note/17 - null null
+2024-05-05 21:16:28.439 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5036/v1/note/17 - 204 null null 0.3434ms
+2024-05-05 21:16:28.441 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5036/v1/note/17 - application/json 1030
+2024-05-05 21:16:28.441 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.UpdateNote (take-note)'
+2024-05-05 21:16:28.464 -03:00 [INF] Executed DbCommand (12ms) [Parameters=[@p4='17', @p0='ingredientes
+
+1 baguete pequena
+
+1 dente de alho
+
+2 tomates italianos grandes e bem maduros
+
+2 ramos de manjericão
+
+Azeite a gosto
+
+Sal e pimenta-do-reino a gosto
+
+Modo de Preparo
+
+Reúna os ingredientes da brusqueta;
+
+Corte a baguete em fatias de 1 cm;
+
+Descasque o dente de alho e esfregue-o nas fatias de pão.
+
+Coloque as fatias em uma assadeira, regue elas com um fio de azeite e leve-as ao forno preaquecido a 180ºC por cerca de 10 minutos ou até que fiquem crocantes e levemente douradas. Reserve;
+
+Lave os tomates, corte-os ao meio e retire as sementes;
+
+Corte os tomates em cubos, cerca de 0,5 cm;
+
+Em uma tigela, coloque os tomates em cubos, as folhas de manjericão, um generoso fio de azeite, o sal e a pimenta. Misture delicadamente;
+
+Coloque uma porção desse tomate temperado por cima de cada fatia das torradas, regue com mais um fio de azeite e sirva. Bom apetite!' (Nullable = false) (Size = 4000), @p1='2024-05-06T00:13:13.5113460' (DbType = DateTime), @p2='receita' (Nullable = false) (Size = 4000), @p3='2024-05-06T00:16:28.4507422Z' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Notes` SET `Content` = @p0, `CreatedAt` = @p1, `Title` = @p2, `UpdatedAt` = @p3
+WHERE `Id` = @p4;
+SELECT ROW_COUNT();
+2024-05-05 21:16:28.465 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5036/v1/note/17 - 204 null null 23.6392ms
+2024-05-05 21:16:28.469 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:16:28.470 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:16:28.479 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:16:28.482 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 12.3823ms
+2024-05-05 21:18:35.799 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:18:35.799 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:18:35.812 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:18:35.814 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 15.7548ms
+2024-05-05 21:20:13.770 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:20:13.770 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:20:13.802 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:20:13.806 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 35.8045ms
+2024-05-05 21:23:15.790 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:23:15.791 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:23:15.809 -03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:23:15.825 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 34.9064ms
+2024-05-05 21:23:16.542 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:23:16.542 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:23:16.559 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:23:16.562 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 19.748ms
+2024-05-05 21:25:12.933 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:25:12.933 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:25:12.948 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:25:12.952 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 19.1846ms
+2024-05-05 21:25:13.786 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:25:13.786 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:25:13.802 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:25:13.805 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 18.9537ms
+2024-05-05 21:26:04.234 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:26:04.234 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:26:04.260 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:26:04.266 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 32.9282ms
+2024-05-05 21:28:20.325 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:28:20.402 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:28:21.339 -03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:28:21.472 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 1148.8498ms
+2024-05-05 21:29:56.434 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:29:56.437 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:29:56.507 -03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:29:56.517 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 83.1858ms
+2024-05-05 21:30:41.139 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:30:41.153 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:30:41.253 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:30:41.257 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 118.2521ms
+2024-05-05 21:30:41.874 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:30:41.875 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:30:41.894 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:30:41.898 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 23.7204ms
+2024-05-05 21:39:56.718 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger - null null
+2024-05-05 21:39:56.799 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger - 301 0 null 82.4496ms
+2024-05-05 21:39:56.804 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null
+2024-05-05 21:39:56.858 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 53.961ms
+2024-05-05 21:39:56.893 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/swagger-ui-bundle.js - null null
+2024-05-05 21:39:56.894 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/swagger-ui.css - null null
+2024-05-05 21:39:56.904 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/swagger-ui-standalone-preset.js - null null
+2024-05-05 21:39:56.904 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-05 21:39:56.906 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 1.6651ms
+2024-05-05 21:39:56.934 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/swagger-ui.css - 200 143943 text/css 40.6001ms
+2024-05-05 21:39:56.938 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 34.2109ms
+2024-05-05 21:39:56.985 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 92.6916ms
+2024-05-05 21:39:57.171 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null
+2024-05-05 21:39:57.182 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/favicon-32x32.png - null null
+2024-05-05 21:39:57.182 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/favicon-32x32.png - 200 628 image/png 0.6239ms
+2024-05-05 21:39:57.265 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 94.7004ms
+2024-05-05 21:40:49.617 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note - null null
+2024-05-05 21:40:49.624 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:40:50.653 -03:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:40:50.744 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note - 200 null application/json; charset=utf-8 1127.0873ms
+2024-05-05 21:41:35.256 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:41:35.258 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:41:35.291 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:41:35.295 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 39.6956ms
+2024-05-05 21:42:52.831 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:42:52.832 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:42:52.945 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:42:52.949 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 117.9842ms
+2024-05-05 21:47:16.690 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:47:16.690 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:47:16.721 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:47:16.725 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 34.9152ms
+2024-05-05 21:48:17.821 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:48:17.821 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:48:17.847 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:48:17.852 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 30.5082ms
+2024-05-05 21:50:31.435 -03:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5036/v1/note/17 - null null
+2024-05-05 21:50:31.436 -03:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5036/v1/note/17 - 204 null null 1.059ms
+2024-05-05 21:50:31.439 -03:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5036/v1/note/17 - application/json 301
+2024-05-05 21:50:31.439 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.UpdateNote (take-note)'
+2024-05-05 21:50:31.583 -03:00 [INF] Executed DbCommand (46ms) [Parameters=[@p4='17', @p0='ingredientes
+
+1 baguete pequena
+
+1 dente de alho
+
+2 tomates italianos grandes e bem maduros
+
+2 ramos de manjericão
+
+Azeite a gosto
+
+Sal e pimenta-do-reino a gosto
+
+' (Nullable = false) (Size = 4000), @p1='2024-05-06T00:13:13.5113460' (DbType = DateTime), @p2='receita' (Nullable = false) (Size = 4000), @p3='2024-05-06T00:50:31.4748446Z' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Notes` SET `Content` = @p0, `CreatedAt` = @p1, `Title` = @p2, `UpdatedAt` = @p3
+WHERE `Id` = @p4;
+SELECT ROW_COUNT();
+2024-05-05 21:50:31.595 -03:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5036/v1/note/17 - 204 null null 155.5997ms
+2024-05-05 21:50:31.599 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:50:31.600 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:50:31.609 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:50:31.611 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 12.1973ms
+2024-05-05 21:52:47.100 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:52:47.101 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:52:47.113 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:52:47.115 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 15.3341ms
+2024-05-05 21:57:37.479 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:57:37.479 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:57:37.501 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:57:37.504 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 24.5658ms
+2024-05-05 21:58:20.167 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:58:20.167 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:58:20.181 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:58:20.183 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 16.5131ms
+2024-05-05 21:58:20.852 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:58:20.852 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:58:20.864 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:58:20.866 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 14.5953ms
+2024-05-05 21:58:21.483 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 21:58:21.484 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 21:58:21.499 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 21:58:21.502 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 18.8382ms
+2024-05-05 22:00:13.742 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:00:13.743 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:00:13.766 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:00:13.779 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 36.6269ms
+2024-05-05 22:01:42.414 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:01:42.414 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:01:42.433 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:01:42.436 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 22.0592ms
+2024-05-05 22:02:46.748 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:02:46.748 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:02:46.768 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:02:46.771 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 23.4468ms
+2024-05-05 22:03:11.281 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:03:11.282 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:03:11.296 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:03:11.299 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 17.5558ms
+2024-05-05 22:03:19.262 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:03:19.263 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:03:19.279 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:03:19.283 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 20.3251ms
+2024-05-05 22:03:24.707 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:03:24.707 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:03:24.722 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:03:24.725 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 18.3759ms
+2024-05-05 22:03:28.824 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:03:28.824 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:03:28.839 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:03:28.842 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 18.5736ms
+2024-05-05 22:03:31.734 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:03:31.734 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:03:31.749 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:03:31.752 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 18.1303ms
+2024-05-05 22:03:35.724 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:03:35.725 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:03:35.740 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:03:35.742 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 17.9365ms
+2024-05-05 22:03:38.546 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:03:38.546 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:03:38.563 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:03:38.566 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 20.2418ms
+2024-05-05 22:03:41.710 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:03:41.711 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:03:41.727 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:03:41.730 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 19.8266ms
+2024-05-05 22:03:53.591 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:03:53.591 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:03:53.609 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:03:53.613 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 21.7852ms
+2024-05-05 22:03:56.616 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:03:56.616 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:03:56.632 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:03:56.634 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 18.3257ms
+2024-05-05 22:04:21.237 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:04:21.237 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:04:21.254 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:04:21.259 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 22.7109ms
+2024-05-05 22:04:40.351 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:04:40.352 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:04:40.374 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:04:40.379 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 28.1733ms
+2024-05-05 22:04:57.347 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:04:57.347 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:04:57.365 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:04:57.368 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 20.9914ms
+2024-05-05 22:05:05.463 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:05:05.463 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:05:05.478 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:05:05.480 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 17.1644ms
+2024-05-05 22:05:19.153 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:05:19.154 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:05:19.172 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:05:19.175 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 21.6458ms
+2024-05-05 22:05:22.848 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:05:22.849 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:05:22.861 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:05:22.865 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 16.6898ms
+2024-05-05 22:05:44.537 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:05:44.538 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:05:44.553 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:05:44.558 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 21.2833ms
+2024-05-05 22:05:58.533 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:05:58.534 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:05:58.549 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:05:58.551 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 18.0982ms
+2024-05-05 22:06:03.756 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:06:03.756 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:06:03.772 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:06:03.775 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 18.9301ms
+2024-05-05 22:06:13.296 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/v1/note/ - null null
+2024-05-05 22:06:13.296 -03:00 [INF] Executing endpoint 'take_note.Domain.NoteController.GetNotes (take-note)'
+2024-05-05 22:06:13.312 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`Id`, `n`.`Content`, `n`.`CreatedAt`, `n`.`Title`, `n`.`UpdatedAt`
+FROM `Notes` AS `n`
+2024-05-05 22:06:13.318 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/v1/note/ - 200 null application/json; charset=utf-8 21.6138ms

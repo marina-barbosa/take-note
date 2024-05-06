@@ -22,11 +22,19 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<MySqlDbContext>(options =>
 {
-  var defaultConnectionString = builder.Configuration.GetConnectionString("RailWayConnection");
+  var defaultConnectionString = builder.Configuration.GetConnectionString("MySqlConnection");
   options.UseMySql(defaultConnectionString, ServerVersion.AutoDetect(defaultConnectionString))
    .EnableSensitiveDataLogging()
    .LogTo(Console.WriteLine, LogLevel.Debug);
 });
+
+// builder.Services.AddDbContext<MySqlDbContext>(options =>
+// {
+//   var defaultConnectionString = builder.Configuration.GetConnectionString("RailWayConnection");
+//   options.UseMySql(defaultConnectionString, ServerVersion.AutoDetect(defaultConnectionString))
+//    .EnableSensitiveDataLogging()
+//    .LogTo(Console.WriteLine, LogLevel.Debug);
+// });
 
 builder.Services.AddScoped<INoteService, NoteService>();
 builder.Services.AddScoped<ITrackService, TrackService>();
@@ -36,19 +44,34 @@ builder.Services.AddCors(options =>
 {
   options.AddPolicy("AllowSpecificOrigins", builder =>
   {
-    builder.WithOrigins("https://takenotemxm.netlify.app")
+    builder.WithOrigins("http://localhost:4200")
               .AllowAnyMethod()
               .AllowAnyHeader();
   });
 });
+// builder.Services.AddCors(options =>
+// {
+//   options.AddPolicy("AllowSpecificOrigins", builder =>
+//   {
+//     builder.WithOrigins("https://takenotemxm.netlify.app")
+//               .AllowAnyMethod()
+//               .AllowAnyHeader();
+//   });
+// });
 
 var app = builder.Build();
 
 app.UseCors("AllowSpecificOrigins");
 
 
-app.UseSwagger();
-app.UseSwaggerUI();
+// app.UseSwagger();
+// app.UseSwaggerUI();
+
+if (app.Environment.IsDevelopment())
+{
+  app.UseSwagger();
+  app.UseSwaggerUI();
+}
 
 
 app.UseHttpsRedirection();

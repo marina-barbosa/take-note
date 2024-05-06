@@ -13,9 +13,12 @@ public class NoteService : INoteService
         _context = context;
     }
 
-    public async Task<IEnumerable<Note>> GetAllNotesAsync()
+    public async Task<IEnumerable<Note>> GetAllNotesAsync(int pageNumber, int pageSize)
     {
-        return await _context.Notes.ToListAsync();
+        return await _context.Notes
+            .Skip((pageNumber - 1) * pageSize)
+            .Take(pageSize)
+            .ToListAsync();
     }
 
     public async Task<Note?> GetNoteByIdAsync(int id)
@@ -25,7 +28,7 @@ public class NoteService : INoteService
 
     public async Task<Note> CreateNoteAsync(Note note)
     {
-        note.CreatedAt = DateTime.UtcNow; // Set creation time to UTC
+        note.CreatedAt = DateTime.UtcNow;
         await _context.Notes.AddAsync(note);
         await _context.SaveChangesAsync();
         return note;
@@ -33,7 +36,7 @@ public class NoteService : INoteService
 
     public async Task UpdateNoteAsync(Note note)
     {
-        note.UpdatedAt = DateTime.UtcNow; // Set update time to UTC
+        note.UpdatedAt = DateTime.UtcNow;
         _context.Notes.Update(note);
         await _context.SaveChangesAsync();
     }

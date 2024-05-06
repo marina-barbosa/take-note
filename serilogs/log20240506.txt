@@ -1,0 +1,6 @@
+2024-05-06 01:16:04.078 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/index.html - null null
+2024-05-06 01:16:04.088 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/index.html - 200 null text/html;charset=utf-8 11.3799ms
+2024-05-06 01:16:04.143 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 01:16:04.143 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 0.5914ms
+2024-05-06 01:16:04.374 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - null null
+2024-05-06 01:16:04.385 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5036/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.8982ms

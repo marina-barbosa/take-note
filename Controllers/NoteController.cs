@@ -23,9 +23,9 @@ public class NoteController : ControllerBase
   }
 
   [HttpGet]
-  public async Task<IActionResult> GetNotes()
+  public async Task<IActionResult> GetNotes(int pageNumber = 1, int pageSize = 10)
   {
-    var notes = await _noteService.GetAllNotesAsync();
+    var notes = await _noteService.GetAllNotesAsync(pageNumber, pageSize);
 
     DateTime currentTime = DateTime.Now;
     await _trackService.TrackDatabaseQueries($"{currentTime} - Método: GET - GetAllNotesAsync()");
