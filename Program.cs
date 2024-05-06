@@ -4,7 +4,7 @@ using take_note.Domain;
 using take_note.Services;
 
 var log = new LoggerConfiguration()
-    .WriteTo.Console()
+    //.WriteTo.Console()
     .WriteTo.File("serilogs/log.txt", rollingInterval: RollingInterval.Day)
     .Filter.With(new CustomLogFilter())
     .CreateLogger();
@@ -13,6 +13,9 @@ Log.Logger = log;
 
 
 var builder = WebApplication.CreateBuilder(args);
+
+//builder.Services.AddTransient<DatabaseQueryTrackingMiddleware>();
+
 builder.Services.AddSerilog();
 builder.Host.UseSerilog();
 
@@ -62,6 +65,8 @@ builder.Services.AddCors(options =>
 // });
 
 var app = builder.Build();
+
+//app.UseMiddleware<DatabaseQueryTrackingMiddleware>();
 
 app.UseCors("AllowSpecificOrigins");
 
