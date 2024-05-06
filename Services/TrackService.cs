@@ -1,7 +1,5 @@
 
 using System.Data;
-using Serilog.Core;
-using Serilog.Events;
 using take_note.Domain;
 using take_note.Domain.Models;
 
@@ -17,8 +15,8 @@ public interface ITrackService
 public class TrackService : ITrackService
 {
   private readonly MySqlDbContext _context;
-  private readonly string arquivo = "registro.txt";
-  //private readonly string arquivoSerilog = "serilogs/log20240424.txt";
+  private readonly string arquivo = "logs/trackService/registro.txt";
+  //private readonly string arquivoSerilog = "logs/serilogs/log20240424.txt";
   public TrackService(MySqlDbContext context)
   {
     _context = context;
@@ -128,15 +126,6 @@ public class TrackService : ITrackService
 }
 
 
-public class CustomLogFilter : ILogEventFilter
-{
-  public bool IsEnabled(LogEvent logEvent)
-  {
-    return logEvent.MessageTemplate.Text.Contains("Request starting") ||
-           logEvent.MessageTemplate.Text.Contains("Executing endpoint") ||
-           logEvent.MessageTemplate.Text.Contains("Executed DbCommand") ||
-           logEvent.MessageTemplate.Text.Contains("Request finished");
-  }
-}
+
 
 

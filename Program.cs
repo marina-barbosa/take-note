@@ -5,7 +5,7 @@ using take_note.Services;
 
 var log = new LoggerConfiguration()
     //.WriteTo.Console()
-    .WriteTo.File("serilogs/log.txt", rollingInterval: RollingInterval.Day)
+    .WriteTo.File("logs/serilog/log.txt", rollingInterval: RollingInterval.Day)
     .Filter.With(new CustomLogFilter())
     .CreateLogger();
 log.Information("Inicio da aplicação MXM Sistemas");
@@ -13,8 +13,6 @@ Log.Logger = log;
 
 
 var builder = WebApplication.CreateBuilder(args);
-
-//builder.Services.AddTransient<DatabaseQueryTrackingMiddleware>();
 
 builder.Services.AddSerilog();
 builder.Host.UseSerilog();
@@ -27,8 +25,8 @@ builder.Services.AddDbContext<MySqlDbContext>(options =>
 {
   var defaultConnectionString = builder.Configuration.GetConnectionString("MySqlConnection");
   options.UseMySql(defaultConnectionString, ServerVersion.AutoDetect(defaultConnectionString))
-   .EnableSensitiveDataLogging()
-   .LogTo(Console.WriteLine, LogLevel.Debug);
+   .EnableSensitiveDataLogging();
+  //.LogTo(Console.WriteLine, LogLevel.Debug);
 });
 
 // builder.Services.AddDbContext<MySqlDbContext>(options =>
@@ -64,9 +62,11 @@ builder.Services.AddCors(options =>
 //   });
 // });
 
+// builder.Services.AddSingleton<DatabaseQueryTrackingMiddleware>();
+
 var app = builder.Build();
 
-//app.UseMiddleware<DatabaseQueryTrackingMiddleware>();
+app.UseMiddleware<DatabaseQueryTrackingMiddleware>();
 
 app.UseCors("AllowSpecificOrigins");
 

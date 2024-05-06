@@ -11,8 +11,8 @@ public class ExportController : ControllerBase
 {
 
   private readonly ITrackService _trackService;
-  private readonly string arquivo = "registro.txt";
-  private readonly string arquivoSerilog = "serilogs/log20240506.txt";
+  private readonly string arquivo = "logs/trackService/registro.txt";
+  private readonly string arquivoSerilog = "logs/serilog/log20240506.txt";
 
   public ExportController(ITrackService trackService)
   {
