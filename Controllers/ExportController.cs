@@ -12,7 +12,7 @@ public class ExportController : ControllerBase
 
   private readonly ITrackService _trackService;
   private readonly string arquivo = "logs/trackService/registro.txt";
-  private readonly string arquivoSerilog = "logs/serilog/log20240506.txt";
+  private readonly string arquivoSerilog = "logs/serilog/log20240506b.txt";
 
   public ExportController(ITrackService trackService)
   {
@@ -29,15 +29,15 @@ public class ExportController : ControllerBase
   [HttpGet("txt")]
   public IActionResult ExportarTxt()
   {
-    if (!System.IO.File.Exists(arquivo))
+    if (!System.IO.File.Exists(arquivoSerilog))
     {
-      return NotFound("Arquivo registro.txt não encontrado.");
+      return NotFound("Arquivo log não encontrado.");
     }
 
     byte[] fileBytes;
     try
     {
-      fileBytes = System.IO.File.ReadAllBytes(arquivo);
+      fileBytes = System.IO.File.ReadAllBytes(arquivoSerilog);
     }
     catch (Exception ex)
     {
@@ -50,14 +50,14 @@ public class ExportController : ControllerBase
   [HttpGet("csv")]
   public IActionResult ExportarCsv()
   {
-    if (!System.IO.File.Exists(arquivo))
+    if (!System.IO.File.Exists(arquivoSerilog))
     {
-      return NotFound("Arquivo registro.txt não encontrado.");
+      return NotFound("Arquivo log não encontrado.");
     }
 
     string csvData = "";
 
-    string[] txtLines = System.IO.File.ReadAllLines(arquivo);
+    string[] txtLines = System.IO.File.ReadAllLines(arquivoSerilog);
 
     foreach (string line in txtLines)
     {
